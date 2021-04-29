@@ -1,0 +1,720 @@
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/no_PCA_no_selection_RandomForest_test_size_chances.pgf}
+        \caption{Probabilities for Random Forest to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/no_PCA_no_selection_RandomForest_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the Random Forest as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Random Forest; No preprocessing]{Results as a function of variable test set sizes with a fixed classifier. A \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+    \label{fig:no_PCA_no_selection_RandomForest}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/no_PCA_no_selection_SVC_test_size_chances.pgf}
+        \caption{Probabilities for SVM with rbf kernel to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/no_PCA_no_selection_SVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the SVM with rbf kernel as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. SVM (kernel = rbf); No preprocessing]{Results as a function of variable test set sizes with a fixed classifier. An \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+    \label{fig:no_PCA_no_selection_SVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/no_PCA_no_selection_LinearSVC_test_size_chances.pgf}
+        \caption{Probabilities for linear SVM to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/no_PCA_no_selection_LinearSVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the linear SVM as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Linear SVM; No preprocessing]{Results as a function of variable test set sizes with a fixed classifier. An \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+    \label{fig:no_PCA_no_selection_LinearSVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/no_PCA_10_best_selected_RandomForest_test_size_chances.pgf}
+        \caption{Probabilities for Random Forest to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/no_PCA_10_best_selected_RandomForest_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the Random Forest as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Random Forest; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+    \label{fig:no_PCA_10_best_selected_RandomForest}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/no_PCA_10_best_selected_SVC_test_size_chances.pgf}
+        \caption{Probabilities for SVM with rbf kernel to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/no_PCA_10_best_selected_SVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the SVM with rbf kernel as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+    \label{fig:no_PCA_10_best_selected_SVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/no_PCA_10_best_selected_LinearSVC_test_size_chances.pgf}
+        \caption{Probabilities for linear SVM to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/no_PCA_10_best_selected_LinearSVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the linear SVM as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Linear SVM; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+    \label{fig:no_PCA_10_best_selected_LinearSVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/no_PCA_100_best_selected_RandomForest_test_size_chances.pgf}
+        \caption{Probabilities for Random Forest to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/no_PCA_100_best_selected_RandomForest_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the Random Forest as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Random Forest; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{100} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+    \label{fig:no_PCA_100_best_selected_RandomForest}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/no_PCA_100_best_selected_SVC_test_size_chances.pgf}
+        \caption{Probabilities for SVM with rbf kernel to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/no_PCA_100_best_selected_SVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the SVM with rbf kernel as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{100} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+    \label{fig:no_PCA_100_best_selected_SVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/no_PCA_100_best_selected_LinearSVC_test_size_chances.pgf}
+        \caption{Probabilities for linear SVM to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/no_PCA_100_best_selected_LinearSVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the linear SVM as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Linear SVM; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{100} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+    \label{fig:no_PCA_100_best_selected_LinearSVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/no_PCA_1000_best_selected_RandomForest_test_size_chances.pgf}
+        \caption{Probabilities for Random Forest to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/no_PCA_1000_best_selected_RandomForest_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the Random Forest as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Random Forest; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{1000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{1000} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+    \label{fig:no_PCA_1000_best_selected_RandomForest}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/no_PCA_1000_best_selected_SVC_test_size_chances.pgf}
+        \caption{Probabilities for SVM with rbf kernel to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/no_PCA_1000_best_selected_SVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the SVM with rbf kernel as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: ANOVA feature selection ($k_\text{best} = \num{1000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{1000} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+    \label{fig:no_PCA_1000_best_selected_SVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/no_PCA_1000_best_selected_LinearSVC_test_size_chances.pgf}
+        \caption{Probabilities for linear SVM to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/no_PCA_1000_best_selected_LinearSVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the linear SVM as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Linear SVM; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{1000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{1000} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+    \label{fig:no_PCA_1000_best_selected_LinearSVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/no_PCA_10000_best_selected_RandomForest_test_size_chances.pgf}
+        \caption{Probabilities for Random Forest to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/no_PCA_10000_best_selected_RandomForest_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the Random Forest as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Random Forest; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{10000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10000} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+    \label{fig:no_PCA_10000_best_selected_RandomForest}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/no_PCA_10000_best_selected_SVC_test_size_chances.pgf}
+        \caption{Probabilities for SVM with rbf kernel to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/no_PCA_10000_best_selected_SVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the SVM with rbf kernel as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: ANOVA feature selection ($k_\text{best} = \num{10000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10000} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+    \label{fig:no_PCA_10000_best_selected_SVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/no_PCA_10000_best_selected_LinearSVC_test_size_chances.pgf}
+        \caption{Probabilities for linear SVM to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/no_PCA_10000_best_selected_LinearSVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the linear SVM as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Linear SVM; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{10000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10000} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+    \label{fig:no_PCA_10000_best_selected_LinearSVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/no_PCA_50000_best_selected_RandomForest_test_size_chances.pgf}
+        \caption{Probabilities for Random Forest to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/no_PCA_50000_best_selected_RandomForest_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the Random Forest as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Random Forest; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{50000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{50000} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+    \label{fig:no_PCA_50000_best_selected_RandomForest}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/no_PCA_50000_best_selected_SVC_test_size_chances.pgf}
+        \caption{Probabilities for SVM with rbf kernel to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/no_PCA_50000_best_selected_SVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the SVM with rbf kernel as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: ANOVA feature selection ($k_\text{best} = \num{50000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{50000} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+    \label{fig:no_PCA_50000_best_selected_SVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/no_PCA_50000_best_selected_LinearSVC_test_size_chances.pgf}
+        \caption{Probabilities for linear SVM to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/no_PCA_50000_best_selected_LinearSVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the linear SVM as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Linear SVM; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{50000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{50000} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+    \label{fig:no_PCA_50000_best_selected_LinearSVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_10_components_no_selection_RandomForest_test_size_chances.pgf}
+        \caption{Probabilities for Random Forest to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_10_components_no_selection_RandomForest_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the Random Forest as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{10} components} were retained. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+    \label{fig:PCA_10_components_no_selection_RandomForest}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_10_components_no_selection_SVC_test_size_chances.pgf}
+        \caption{Probabilities for SVM with rbf kernel to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_10_components_no_selection_SVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the SVM with rbf kernel as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: PCA ($n_\text{components} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{10} components} were retained. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+    \label{fig:PCA_10_components_no_selection_SVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_10_components_no_selection_LinearSVC_test_size_chances.pgf}
+        \caption{Probabilities for linear SVM to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_10_components_no_selection_LinearSVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the linear SVM as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{10} components} were retained. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+    \label{fig:PCA_10_components_no_selection_LinearSVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_50_components_no_selection_RandomForest_test_size_chances.pgf}
+        \caption{Probabilities for Random Forest to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_50_components_no_selection_RandomForest_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the Random Forest as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \num{50}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{50} components} were retained. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+    \label{fig:PCA_50_components_no_selection_RandomForest}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_50_components_no_selection_SVC_test_size_chances.pgf}
+        \caption{Probabilities for SVM with rbf kernel to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_50_components_no_selection_SVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the SVM with rbf kernel as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: PCA ($n_\text{components} = \num{50}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{50} components} were retained. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+    \label{fig:PCA_50_components_no_selection_SVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_50_components_no_selection_LinearSVC_test_size_chances.pgf}
+        \caption{Probabilities for linear SVM to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_50_components_no_selection_LinearSVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the linear SVM as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \num{50}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{50} components} were retained. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+    \label{fig:PCA_50_components_no_selection_LinearSVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_50_components_10_best_selected_RandomForest_test_size_chances.pgf}
+        \caption{Probabilities for Random Forest to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_50_components_10_best_selected_RandomForest_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the Random Forest as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \num{50}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{50} components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+    \label{fig:PCA_50_components_10_best_selected_RandomForest}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_50_components_10_best_selected_SVC_test_size_chances.pgf}
+        \caption{Probabilities for SVM with rbf kernel to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_50_components_10_best_selected_SVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the SVM with rbf kernel as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: PCA ($n_\text{components} = \num{50}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{50} components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+    \label{fig:PCA_50_components_10_best_selected_SVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_50_components_10_best_selected_LinearSVC_test_size_chances.pgf}
+        \caption{Probabilities for linear SVM to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_50_components_10_best_selected_LinearSVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the linear SVM as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \num{50}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{50} components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+    \label{fig:PCA_50_components_10_best_selected_LinearSVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_500_components_no_selection_RandomForest_test_size_chances.pgf}
+        \caption{Probabilities for Random Forest to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_500_components_no_selection_RandomForest_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the Random Forest as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \num{500}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{500} components} were retained. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+    \label{fig:PCA_500_components_no_selection_RandomForest}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_500_components_no_selection_SVC_test_size_chances.pgf}
+        \caption{Probabilities for SVM with rbf kernel to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_500_components_no_selection_SVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the SVM with rbf kernel as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: PCA ($n_\text{components} = \num{500}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{500} components} were retained. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+    \label{fig:PCA_500_components_no_selection_SVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_500_components_no_selection_LinearSVC_test_size_chances.pgf}
+        \caption{Probabilities for linear SVM to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_500_components_no_selection_LinearSVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the linear SVM as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \num{500}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{500} components} were retained. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+    \label{fig:PCA_500_components_no_selection_LinearSVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_500_components_10_best_selected_RandomForest_test_size_chances.pgf}
+        \caption{Probabilities for Random Forest to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_500_components_10_best_selected_RandomForest_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the Random Forest as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \num{500}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{500} components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+    \label{fig:PCA_500_components_10_best_selected_RandomForest}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_500_components_10_best_selected_SVC_test_size_chances.pgf}
+        \caption{Probabilities for SVM with rbf kernel to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_500_components_10_best_selected_SVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the SVM with rbf kernel as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: PCA ($n_\text{components} = \num{500}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{500} components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+    \label{fig:PCA_500_components_10_best_selected_SVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_500_components_10_best_selected_LinearSVC_test_size_chances.pgf}
+        \caption{Probabilities for linear SVM to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_500_components_10_best_selected_LinearSVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the linear SVM as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \num{500}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{500} components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+    \label{fig:PCA_500_components_10_best_selected_LinearSVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_500_components_100_best_selected_RandomForest_test_size_chances.pgf}
+        \caption{Probabilities for Random Forest to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_500_components_100_best_selected_RandomForest_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the Random Forest as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \num{500}$); ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{500} components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{100} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+    \label{fig:PCA_500_components_100_best_selected_RandomForest}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_500_components_100_best_selected_SVC_test_size_chances.pgf}
+        \caption{Probabilities for SVM with rbf kernel to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_500_components_100_best_selected_SVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the SVM with rbf kernel as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: PCA ($n_\text{components} = \num{500}$); ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{500} components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{100} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+    \label{fig:PCA_500_components_100_best_selected_SVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_500_components_100_best_selected_LinearSVC_test_size_chances.pgf}
+        \caption{Probabilities for linear SVM to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_500_components_100_best_selected_LinearSVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the linear SVM as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \num{500}$); ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{500} components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{100} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+    \label{fig:PCA_500_components_100_best_selected_LinearSVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_all_components_no_selection_RandomForest_test_size_chances.pgf}
+        \caption{Probabilities for Random Forest to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_all_components_no_selection_RandomForest_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the Random Forest as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \text{all}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+    \label{fig:PCA_all_components_no_selection_RandomForest}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_all_components_no_selection_SVC_test_size_chances.pgf}
+        \caption{Probabilities for SVM with rbf kernel to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_all_components_no_selection_SVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the SVM with rbf kernel as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: PCA ($n_\text{components} = \text{all}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+    \label{fig:PCA_all_components_no_selection_SVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_all_components_no_selection_LinearSVC_test_size_chances.pgf}
+        \caption{Probabilities for linear SVM to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_all_components_no_selection_LinearSVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the linear SVM as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \text{all}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+    \label{fig:PCA_all_components_no_selection_LinearSVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_all_components_10_best_selected_RandomForest_test_size_chances.pgf}
+        \caption{Probabilities for Random Forest to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_all_components_10_best_selected_RandomForest_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the Random Forest as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+    \label{fig:PCA_all_components_10_best_selected_RandomForest}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_all_components_10_best_selected_SVC_test_size_chances.pgf}
+        \caption{Probabilities for SVM with rbf kernel to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_all_components_10_best_selected_SVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the SVM with rbf kernel as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+    \label{fig:PCA_all_components_10_best_selected_SVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_all_components_10_best_selected_LinearSVC_test_size_chances.pgf}
+        \caption{Probabilities for linear SVM to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_all_components_10_best_selected_LinearSVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the linear SVM as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+    \label{fig:PCA_all_components_10_best_selected_LinearSVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_all_components_100_best_selected_RandomForest_test_size_chances.pgf}
+        \caption{Probabilities for Random Forest to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_all_components_100_best_selected_RandomForest_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the Random Forest as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{100} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+    \label{fig:PCA_all_components_100_best_selected_RandomForest}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_all_components_100_best_selected_SVC_test_size_chances.pgf}
+        \caption{Probabilities for SVM with rbf kernel to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_all_components_100_best_selected_SVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the SVM with rbf kernel as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{100} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+    \label{fig:PCA_all_components_100_best_selected_SVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_all_components_100_best_selected_LinearSVC_test_size_chances.pgf}
+        \caption{Probabilities for linear SVM to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_all_components_100_best_selected_LinearSVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the linear SVM as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{100} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+    \label{fig:PCA_all_components_100_best_selected_LinearSVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_all_components_1000_best_selected_RandomForest_test_size_chances.pgf}
+        \caption{Probabilities for Random Forest to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_all_components_1000_best_selected_RandomForest_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the Random Forest as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{1000}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{1000} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+    \label{fig:PCA_all_components_1000_best_selected_RandomForest}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_all_components_1000_best_selected_SVC_test_size_chances.pgf}
+        \caption{Probabilities for SVM with rbf kernel to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_all_components_1000_best_selected_SVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the SVM with rbf kernel as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{1000}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{1000} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+    \label{fig:PCA_all_components_1000_best_selected_SVC}
+\end{figure}
+
+\begin{figure}
+    \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    \begin{subfigure}[t]{0.61\textwidth}
+        \input{images/PCA_all_components_1000_best_selected_LinearSVC_test_size_chances.pgf}
+        \caption{Probabilities for linear SVM to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+    \end{subfigure}
+    \hspace{3.0mm}
+    \begin{subfigure}[t]{0.34\textwidth}
+        \input{images/PCA_all_components_1000_best_selected_LinearSVC_test_size_stats.pgf}
+        \caption{Minimum, maximum and mean results for the linear SVM as a function of test sample size.}
+    \end{subfigure}
+    \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{1000}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{1000} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+    \label{fig:PCA_all_components_1000_best_selected_LinearSVC}
+\end{figure}

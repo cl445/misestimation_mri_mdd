@@ -1,0 +1,321 @@
+\documentclass{article}
+
+
+\usepackage{arxiv}
+\usepackage{graphicx}
+\usepackage{hhline}
+\usepackage{pgf}
+\usepackage{multirow}
+\usepackage{subcaption}
+\usepackage{siunitx}
+\sisetup{group-separator = {,},group-minimum-digits=4}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{nicefrac,xfrac}
+\usepackage{microtype}
+\usepackage[]{authblk}
+\usepackage{url}
+\usepackage[format=hang]{caption}
+\usepackage{pgf}
+\usepackage{multirow, bigdelim}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{placeins}
+\usepackage{import}
+\usepackage{subcaption}
+%\usepackage{tikz}
+
+%\definecolor{lime}{HTML}{A6CE39}
+%\DeclareRobustCommand{\orcidicon}{%
+%	\begin{tikzpicture}
+%	\draw[lime, fill=lime] (0,0)
+%	circle [radius=0.16]
+%	node[white] {{\fontfamily{qag}\selectfont \tiny ID}};
+%	\draw[white, fill=white] (-0.0825,0.095)
+%	circle [radius=0.007];
+%	\end{tikzpicture}
+%	\hspace{-2mm}
+%}
+%
+%
+%\newcommand{\orcid}[1]{\href{https://orcid.org/#1}{\orcidicon}}
+
+\renewcommand*{\Affilfont}{\footnotesize}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\chead{Performance Overestimation in Neuroimaging Studies of Depression}
+
+\title{Systematic Overestimation of Machine Learning Performance in Neuroimaging Studies of Depression}
+%\author[$\;\;$1,2]{\orcid{0000-0001-5164-8227}Claas Flint \thanks{indicates that the authors contributed equally to the work and should be regarded as first authors.}}
+%\author[$*$ 3,5]{\orcid{0000-0002-3353-8566}Micah Cearns}
+%\author[1]{\orcid{0000-0003-4749-3298}Nils Opel}
+%\author[1]{\orcid{0000-0002-7018-4525}Ronny Redlich}
+%\author[1]{\orcid{0000-0001-6587-2617}David M. A. Mehler}
+%\author[1]{\orcid{0000-0001-7459-6634}Daniel Emden}
+%\author[1]{\orcid{0000-0002-6241-1492}Nils R. Winter}
+%\author[1]{Ramona Leenings}
+%\author[4,8]{\orcid{0000-0001-6363-2759}Simon B. Eickhoff}
+%\author[6]{\orcid{0000-0002-2514-2625}Tilo Kircher}
+%\author[6]{\orcid{0000-0002-0564-2497}Axel Krug}
+%\author[6]{\orcid{0000-0002-0749-7473}Igor Nenadic}
+%\author[1]{\orcid{0000-0002-2445-9778}Volker Arolt}
+%\author[3]{Scott Clark}
+%\author[3,5,7]{\orcid{0000-0001-6548-426X}Bernhard T. Baune}
+%\author[2]{\orcid{0000-0001-7678-9528}Xiaoyi Jiang}
+%\author[$\;\;$1]{\orcid{0000-0002-0623-3759}Udo Dannlowski \thanks{indicates that the authors contributed equally to the work and should be regarded as senior authors.}}
+%\author[$\;\dagger \ddagger$1]{\orcid{0000-0002-8929-4134}Tim Hahn}
+
+\author[$\;\;$1,2]{Claas Flint \thanks{indicates that the authors contributed equally to the work and should be regarded as first authors.}}
+\author[$*$ 3,5]{Micah Cearns}
+\author[1]{Nils Opel}
+\author[1]{Ronny Redlich}
+\author[1]{David M. A. Mehler}
+\author[1]{Daniel Emden}
+\author[1]{Nils R. Winter}
+\author[1]{Ramona Leenings}
+\author[4,8]{Simon B. Eickhoff}
+\author[6]{Tilo Kircher}
+\author[6]{Axel Krug}
+\author[6]{Igor Nenadic}
+\author[1]{Volker Arolt}
+\author[3]{Scott Clark}
+\author[3,5,7]{Bernhard T. Baune}
+\author[2]{Xiaoyi Jiang}
+\author[$\;\;$1]{Udo Dannlowski \thanks{indicates that the authors contributed equally to the work and should be regarded as senior authors.}}
+\author[$\;\dagger \ddagger$1]{Tim Hahn}
+
+\affil[1]{Department of Psychiatry, University of Münster, Germany}
+\affil[2]{Faculty of Mathematics and Computer Science, University of Münster, Germany}
+\affil[3]{Discipline of Psychiatry, School of Medicine, University of Adelaide, Australia}
+\affil[4]{Institute of Neuroscience and Medicine (INM-7) Research Center Jülich}
+\affil[5]{Department of Psychiatry, Melbourne Medical School, The University of Melbourne, Parkville, Australia}
+\affil[6]{Department of Psychiatry and Psychotherapy, University of Marburg, Germany}
+\affil[7]{The Florey Institute of Neuroscience and Mental Health, The University of Melbourne, Parkville, Australia}
+\affil[8]{Institute of Systems Neuroscience, Medical Faculty, Heinrich Heine University Düsseldorf, Düsseldorf, Germany}
+\affil[$\ddagger$]{Corresponding author: Tim Hahn, Phone: +49-251-83-56610, Fax: +49-251-8356612, Email: \href{mailto:hahnt@uni-muenster.de}{hahnt@uni-muenster.de}}
+
+\begin{document}
+    \maketitle
+    \begin{abstract}
+        We currently observe a disconcerting phenomenon in machine learning studies in psychiatry: While we would expect larger samples to yield better results due to the availability of more data, larger machine learning studies consistently show much weaker performance than the numerous small-scale studies. Here, we systematically investigated this effect focusing on one of the most heavily studied question in the field, namely the classification of patients suffering from Major Depressive Disorder (MDD) and healthy controls. Drawing upon a balanced sample of $N = \num{1868}$ MDD patients and healthy controls from our recent international Predictive Analytics Competition (PAC), we first trained and tested a classification model on the full dataset which yielded an accuracy of \SI{61}{\percent}. Next, we mimicked the process by which researchers would draw samples of various sizes ($N=4$ to $N=150$) from the population and showed a strong risk of overestimation. Specifically, for small sample sizes ($N=20$), we observe accuracies of up to \SI{95}{\percent}. For medium sample sizes ($N=100$) accuracies up to \SI{75}{\percent} were found. Importantly, further investigation showed that sufficiently large test sets effectively protect against performance overestimation whereas larger datasets per se do not. While these results questions the validity of a substantial part of the current literature, we outline the relatively low-cost remedy of larger test sets.
+    \end{abstract}
+
+
+    % keywords can be removed
+    \keywords{machine learning \and neuroimaging \and major depression \and overestimation \and small sample size \and clinical translation}
+
+    \pagebreak
+    \section{Introduction}
+    In psychiatry, we are witnessing an explosion of interest in machine learning (ML) and artificial intelligence for prediction and biomarker discovery, paralleling similar developments in personalized medicine\cite{Darcy2016,Eyre2016,Gabrieli2015,Jordan2015}. In contrast to the majority of investigations employing classic group-level statistical inference, ML approaches aim to build models which allow for individual (i.e. single subject) predictions, thus enabling direct assessment of individual differences and clinical utility\cite{Hahn2017}. While this constitutes a major advancement for clinical translation, recent results of large-scale investigations have given rise to a fundamental concern in the field: Specifically, machine learning studies including larger samples did not yield stronger performance, but consistently showed weaker results than studies drawing on small samples, calling into question the validity and generalisability of a large number of highly published proof-of-concept studies.
+
+    The magnitude of this issue was impressively illustrated by the results of the Predictive Analytics Competition (PAC 2018; \url{http://photon-ai.com/pac}) in which participants developed machine learning models to classify healthy controls (HC) and depressive patients (MDD) based on structural MRI data from $N=\num{2240}$ participants. Despite the best efforts of $~\num{170}$ machine learners in \num{49} teams from around the world, performance ranged between \SI{60}{\percent} and \SI{65}{\percent} percent accuracy in a large, independent test set. This is in strong contrast to the numerous smaller studies showing accuracies of \SI{80}{\percent} or more\cite{Johnston2015,Mwangi2012,Patel2015}.
+    Further empirical studies focusing on other disorders support this observed effect of performance deterioration with increasing sample size: In a large-scale investigation, Neuhaus \& Popescu\cite{Neuhaus2018} aggregated original studies across disorder categories, including schizophrenia (total observation $N=\num{5563}$), MDD ($N=\num{2042}$), and attention deficit hyperactivity disorder (ADHD, $N=\num{8084}$), finding an inverse relationship between sample size and balanced accuracy (schizophrenia, $r=\num{-.34}$; MDD, $r=\num{-.32}$; and ADHD, $r=\num{-.43}$). Similar results were observed in a recent review of \num{200} neuroimaging classification studies of brain disorders, finding a general trend towards lower reported accuracy scores in larger samples\cite{Arbabshirani2017}. Given that model performance would be expected to increase with more data, these results hint at a fundamental issue hampering current predictive biomarker studies in psychiatry.
+
+    From a methodological point of view, it has been known since the early 90’s that training samples should be large when there is a high number of features (i.e. measured variables) and a complex classification rule being fit to a dataset\cite{Raudys1991}. Recent works have further reiterated this point\cite{VanderPloeg2014}. Moreover, it is possible that these effects have been further amplified by certain cross-validation schemes. For example, Kambeitz et al.\cite{Kambeitz2017} observed higher accuracy estimates in studies using hold-out cross-validation strategies compared to 10-fold and leave-one-out (LOOCV), whilst Varoquaux et al observed that LOOCV leads to unstable and biased estimates, concluding that repeated random splits should be preferred\cite{Varoquaux2017}.
+
+    Although these findings have sparked in-depth conceptual considerations\cite{Hahn2019}, empirical investigations of this problem have been limited to specific cross-validation schemes and small test set sizes\cite{Varoquaux2018}. Here, we aim to systematically investigate the effects of both train and test set sample sizes on machine learning model performance in neuroimaging based MDD classification. In addition, as it is possible that effects of systematic overestimation have arisen due to suboptimal pipeline configurations (i.e., the disproportionate use of LOOCV and linear Support Vector Machines on samples containing more predictors than observations), we also test a further \num{48} different pipeline configurations to quantify the influence of these additional factors. To demonstrate that this effect was not dependent on the data or any pipeline configurations used in our analyses, we repeat the process using a dummy classifier that ignores all input variables and attempts to only predict class (outcome) proportions. To quantify the magnitude of these effects in each configuration, we drew samples of various sizes from the PAC dataset – mimicking the process by which researchers would draw samples from the population of ML studies reported in the literature. The resulting probability distributions are investigated.
+
+    \section{Materials and methods}
+    To investigate the effects of both train and test set sample sizes on machine learning model performance in neuroimaging based MDD classification, we repeatedly drew samples of different sizes from the PAC dataset to imitate the procedure reported in the literature. Subsequently, the resulting probability distributions are investigated.
+
+    \subsection{Data description}
+    The PAC dataset comprised anonymized, pre-processed MRI data of $N=\num{2240}$ individuals obtained from two large, independent, ongoing studies - the Münster Neuroimaging Cohort\cite{Dannlowski2015,Dannlowski2015a} ($N=\num{724}$ MDD; $N=\num{285}$ HC) and the FOR2107-study\cite{Kircher2018} ($N=\num{582}$ MDD, $N=\num{649}$ HC). Case/control status was diagnosed with the SCID-IV\cite{Wittchen1997} interview employed by trained clinical raters in both studies. In both cohorts, exclusion criteria were any neurological or severe medical condition, MRI contraindications, substance related disorders, Benzodiazepine treatment and, head injuries. For healthy controls, any current or previous psychiatric disorder or use of any psychotropic substances. The Münster Neuroimaging Cohort was scanned at one single MRI-scanner with the same sequence, while the FOR2107-study was scanned at two independent sites\cite{Vogelbacher2018}, yielding \num{3} different scanner types/sequences. The structural T1-weighted magnetic resonance imaging (MRI) scans were pre-processed with the CAT12 toolbox (\url{http://www.neuro.uni-jena.de/cat}, r1184) using default parameters to obtain modulated, normalized grey matter segments (resolution $\num{1.5} \times \num{1.5} \times \SI{1.5}{\cubic\milli\meter}$) which were used for the present analysis. Furthermore, age, gender, scanner type, and total intracranial volume (TIV) were provided.
+
+    \subsection{Machine learning pipeline}
+    To ensure the unbiased approximation of the model’s performance in previously unseen patients (i.e. model generalization), we trained and tested all models in a pipeline to prevent information leaking between patients used for training and validation. First, we used random under sampling to derive a balanced sample of \num{934} MDD cases and \num{934} healthy controls (HC) (see Supplementary appendix \ref{cha:summary_statistics} for summary statistics). To reduce the computational effort, all images have been scaled down to a voxel size of  $\num{3} \times \num{3} \times \SI{3}{\cubic\milli\meter}$. Following, every image was converted to a vector, where every voxel served as a feature. For standardization, the features were scaled to have zero mean and unit variance. Finally, a linear support vector machine (SVM) with default parameters (sklearn\cite{Scikit-learn2018}, v0.20) was trained and model performance was calculated and analysed in the subsequent analyses. The effect of varying scanner-distributions across samples was found to be negligible (see Supplementary appendix \ref{cha:influence_of_scanner_distribution}).
+
+    \subsection{Overall sample size effects}
+    To first examine the effects of overall-set size, we randomly sampled the PAC dataset in steps of \num{1} from $N=4$ to $N=150$. For each $N$ value we created \num{1000} balanced samples. This yielded \num{147000} random samples with equal numbers of patients and healthy controls. Applying the SVM pipeline described above to each of these samples independently allowed us to obtain a distribution of accuracy scores for each $N$ value, respectively. On each sample one SVM was trained with default parameters using LOOCV. Thus, we trained a total of \num{11315000} SVMs. Since the computational effort increases quadratically with increasing sample size, and in addition, the most recent neuroimaging ML studies using LOOCV rarely exceed $N=150$, we decided to stop at this value. Following, we evaluated the distribution of accuracy scores estimated for each sample size ($N=4$ to $150$).
+
+    \subsection{Training set size effects}
+    Second, to examine the effects of training set size, we varied the size of each training set and then tested performance on a fixed hold-out set. Specifically, we randomly sampled the PAC dataset in steps of $1$ from $N=4$ to $150$ as was done in the previous analysis. For each $N$ value, we created \num{1000} balanced samples and used each of them to train different models. To then test the effects of training set size on test set performance, we tested each trained model on a balanced test set of $N=300$. From the resulting distributions, we quantified the probability of overestimating accuracy as a function of training set size.
+
+    \subsection{Test set size effects}
+    To assess the effects of test set size on classification accuracy, we randomly sampled a balanced group of \num{300} subjects from our full sample of \num{934} MDD cases and \num{934} HC’s. From this sample, we randomly sub-sampled test sets of $N=4$ to $150$ in steps of $1$. For each value of $N$, we took \num{1000} samples, resulting in the creation of \num{147000} random test samples. From the remaining \num{784} MDD cases and \num{784} HC’s, we took out another \SI{20}{\percent} sample ($\text{MDD}=157$ and $\text{HC}=157$). The prediction of this sample provides a reliable basis for an overall performance estimation and allows for a comparison with the results obtained from smaller samples. We then trained a single SVM on the remaining sample ($\text{MDD}=627$, $\text{HC}=627$). The trained SVM was then tested on each test set sample ($N=4$ to $150$). From the resulting test set accuracy distributions, we derived the probability of obtaining accuracy scores between \SI{50}{\percent} and \SI{90}{\percent} accuracy by chance. See Figure \ref{fig:pipeline} for an overview of all analyses.
+
+    \begin{figure}
+        \def\svgwidth{\textwidth}
+        \import{./images/}{coloured_horizontal_sys_over_pipeline.pdf_tex}
+        \caption{Workflow for overall, train, and test set size systematic overestimation analyses.}
+        \label{fig:pipeline}
+    \end{figure}
+
+    \subsection{Generalizability of statistical effect}
+    \subsubsection{Alternative pipeline configurations}
+    As we have attempted to hold other components of the modelling process constant so any observed effects of systematic overestimation can be attributed to sample size alone, it is also possible that our results may be dependent on the basic configuration of our machine learning pipeline (e.g., the use of a linear SVM, default hyperparameters, and LOOCV). Therefore, we trained a further \num{48} pipeline configurations, including the use of both linear and radial basis function SVMs and a Random Forest classifier, all of which have demonstrated their efficacy in neuroimaging classification studies.\cite{Kambeitz2017} Within these configurations, we conducted dimensionality reduction using principal components analysis as well as f-test based feature selection. This allowed us to assess whether our findings were being confounded by the large number of predictors used in the main analysis. For further information see Supplement Appendix \ref{cha:alternative_machine_configurations} and for all results see supplementary results \ref{cha:alternative_machine_configuration_results}, supplementary figures \ref{fig:no_PCA_no_selection_RandomForest} – \ref{fig:PCA_all_components_1000_best_selected_LinearSVC} and supplementary tables \ref{tab:no_PCA_no_selection_RandomForest} – \ref{tab:PCA_all_components_1000_best_selected_LinearSVC}.
+    Dummy classifier
+    In order to show that the observed effects were not specific to the PAC dataset or any of the alternative pipeline configurations in these analyses, we repeated the procedures described above with a dummy classifier. Our dummy classifier assumed a prior probability for MDD vs control classification based on the percentage proportion of each class in the training data (prevalence). As the dataset was balanced with random under sampling, the prior and subsequent ground truth of the model was equal to exactly \SI{50}{\percent}. This approach allowed us to compare our distribution of dummy performance estimates derived from our subsample analysis to this ground truth value. Importantly, this approach allows for the quantification of accuracy overestimation as a function of sample size completely independent of any unique characteristics that may be specific to the PAC dataset or our pipeline configurations. Therefore, we can then be sure that any subsequent changes in classifier performance are attributable to sample size alone.
+
+    \section{Results}
+    \subsection{Overall sample size effects}
+    In the overall sample size analysis using LOOCV, we were able to show that the risk of overestimating the classifier performance increases with decreasing overall sample size (Figure \ref{fig:overall_sample_size_effects}a, Supplements Table \ref{tab:overall_linear_svm_loocv}a). Specifically, accuracies of \SI{70}{\percent} or higher are observed with a probability of \SI{13}{\percent} on sample sizes of $N=20$ whereas this probability is reduced to \SI{2}{\percent} for sample sizes of $N=100$. In addition, sample size has a profound impact on the variability of accuracy estimates: For samples of size $N=20$, accuracies ranged from \SI{10}{\percent} to \SI{95}{\percent} ($\text{standard deviation}=\SI{15}{\percent}$) while for samples of $N=100$, accuracies ranged between \SI{35}{\percent} and \SI{81}{\percent} ($\text{standard deviation}=\SI{6}{\percent}$) (Figure \ref{fig:overall_sample_size_effects}b, Supplements Table \ref{tab:overall_linear_svm_loocv}b). Note that this effect is symmetrical and also applies to the underestimation of performance (Figure \ref{fig:overall_sample_size_effects}b). Additionally, the results of the dummy classifier (Figure \ref{fig:overall_sample_size_effects}c, d, Supplements Table \ref{tab:overall_dummy_classifier_loocv}) show that the observed overestimation effect is a general effect of sample size as previously pointed out by Varoquaux\cite{Varoquaux2018}. As the regularization of the SVM is sensitive to the total number of outliers, which may increase in parallel with sample size, we conducted an additional analysis with adjusted $C$ parameters, with the observed effect remaining constant across these analyses (see Supplements Figure \ref{fig:adj_c_overall} and \ref{fig:adj_c_test}).
+
+    \begin{figure}
+        \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+        \begin{subfigure}[t]{0.61\textwidth}
+            \input{images/overall_set_size_svm_chances.pgf}
+            \caption{Probabilities for linear SVMs to yield an accuracy exceeding a certain threshold as a function of sample size employing LOOCV. }
+        \end{subfigure}
+        \hspace{3.0mm}
+        \begin{subfigure}[t]{0.34\textwidth}
+            \input{images/overall_set_size_svm_stats.pgf}
+            \caption{Minimum, maximum and mean results for the linear SVMs as a function of sample size employing LOOCV.}
+        \end{subfigure}
+
+        \vspace{3.0mm}
+
+        \begin{subfigure}[t]{0.61\textwidth}
+            \input{images/overall_set_size_dummy_chances.pgf}
+            \caption{Probabilities for dummy classifiers’s to get an accuracy above a certain chance level related to the size of the used sample.}
+        \end{subfigure}
+        \hspace{3.0mm}
+        \begin{subfigure}[t]{0.34\textwidth}
+            \input{images/overall_set_size_dummy_stats.pgf}
+            \caption{Minimum, maximum and mean results for the dummy classifiers related to the size of the used sample size for training and testing.}
+        \end{subfigure}
+        \caption{Effects of varying overall sample sizes employing LOOCV.}
+        \label{fig:overall_sample_size_effects}
+    \end{figure}
+
+    \subsection{Training set size effects}
+    When examining the effects of training set size ($N=4$ to $150$) using a large test set for evaluation ($N=300$), we did not observe any systematic overestimation (Figure \ref{fig:train_sample_size_effects}a, Supplements Table \ref{tab:train_set_linear_svm}a). In fact, models trained on virtually any training set size from $N=4$ to $150$ were sufficient to obtain maximum model performance. However, increasing training sample size decreased the probability of obtaining very low performance estimate. For training sets of size $N=20$, accuracies ranged from \SI{32}{\percent} to \SI{69}{\percent} ($\text{standard deviation}=\SI{7.1}{\percent}$) while for training sets of $N=100$, accuracies ranged between \SI{51}{\percent} and \SI{70}{\percent} ($\text{standard deviation}=\SI{3.0}{\percent}$) (Figure \ref{fig:train_sample_size_effects}b, Supplements Table \ref{tab:train_set_linear_svm}b). In accordance with the overall sample size analysis, the results of the dummy classifier (Figure \ref{fig:train_sample_size_effects}c, d, Supplements Table \ref{tab:train_dummy_classifier}) showed that this observed effect was general in nature.
+
+    \begin{figure}
+        \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+        \begin{subfigure}[t]{0.61\textwidth}
+            \input{images/train_set_size_svm_chances.pgf}
+            \caption{Probabilities for linear SVMs to yield an accuracy exceeding a certain threshold as a function of training sample size. }
+        \end{subfigure}
+        \hspace{3.0mm}
+        \begin{subfigure}[t]{0.34\textwidth}
+            \input{images/train_set_size_svm_stats.pgf}
+            \caption{Minimum, maximum and mean results for the linear SVMs as a function of training sample size. }
+        \end{subfigure}
+
+        \vspace{3.0mm}
+
+        \begin{subfigure}[t]{0.61\textwidth}
+            \input{images/train_set_size_dummy_chances.pgf}
+            \caption{Probabilities for the dummy classifier to get an accuracy above a certain chance level related to the size of the training set size.}
+        \end{subfigure}
+        \hspace{3.0mm}
+        \begin{subfigure}[t]{0.34\textwidth}
+            \input{images/train_set_size_dummy_stats.pgf}
+            \caption{Minimum, maximum and mean results for the dummy classifier related to the size of the used sample size for training.}
+        \end{subfigure}
+        \caption{Results as a function of training set sizes with a fixed test set size of $N = 300$.}
+        \label{fig:train_sample_size_effects}
+    \end{figure}
+
+    \subsection{Test set size effects}
+    For our analysis varying test set size, we found a similar pattern of systematic overestimation as that in our first overall sample size analysis using LOOCV. With a sample size of $N=20$, we obtain results of \SI{70}{\percent} accuracy or higher with a probability of \SI{30}{\percent}, whilst the mean accuracy on the full dataset ($N=268$) was only \SI{61}{\percent}. This probability dropped to \SI{13}{\percent} when the test sample size was $N=100$. For test sets of size $N=20$, accuracies ranged from \SI{35}{\percent} to \SI{95}{\percent} ($\text{standard deviation}=\SI{10}{\percent}$) whilst for test sets of size $N=100$, accuracies ranged from \SI{51}{\percent} and \SI{79}{\percent} ($\text{standard deviation}=\SI{4}{\percent}$) (Figure \ref{fig:test_sample_size_effects}b, Supplements Table \ref{tab:test_set_dummy_classifier}b). Running the analysis again using our dummy classifier, we were able to show that the general pattern of systematic overestimation was independent of the specific dataset used (Figure \ref{fig:test_sample_size_effects}c, d, Supplements Table \ref{tab:test_set_dummy_classifier}). To show the independent and generalizable character of the observed effect, we repeated the analysis on the \num{48} unique pipeline configurations discussed above (see Supplementary appendix \ref{cha:alternative_machine_configurations}). Specifically, the results are comparable to the original used configuration, i.e. an SVM with a linear kernel and no preprocessing. Finally, our analysis of scanner sites revealed no effects on model performance (see Supplementary appendix \ref{cha:adjusted_regularization_svm}).
+
+    \begin{figure}
+        \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+        \begin{subfigure}[t]{0.61\textwidth}
+            \input{images/test_set_size_svm_chances.pgf}
+            \caption{Probabilities for linear SVMs to yield an accuracy exceeding a certain threshold as a function of test sample size.}
+        \end{subfigure}
+        \hspace{3.0mm}
+        \begin{subfigure}[t]{0.34\textwidth}
+            \input{images/test_set_size_svm_stats.pgf}
+            \caption{Minimum, maximum and mean results for the linear SVMs as a function of test sample size.}
+        \end{subfigure}
+
+        \vspace{3.0mm}
+
+        \begin{subfigure}[t]{0.61\textwidth}
+            \input{images/test_set_size_dummy_chances.pgf}
+            \caption{Probabilities for the dummy classifier to get an accuracy above a certain chance level related to the size of the test set size.}
+        \end{subfigure}
+        \hspace{3.0mm}
+        \begin{subfigure}[t]{0.34\textwidth}
+            \input{images/test_set_size_dummy_stats.pgf}
+            \caption{Minimum, maximum and mean results for the dummy classifier related to the size of the used sample size for testing.}
+        \end{subfigure}
+        \caption{Results as a function of variable test set sizes with and a fixed classifier.}
+        \label{fig:test_sample_size_effects}
+    \end{figure}
+
+
+
+    \section{Discussion}
+
+
+    Sparked by the observation that machine learning studies drawing on larger neuroimaging samples consistently showed weaker results than studies drawing on smaller ones, we drew samples of various sizes from the PAC dataset, thereby mimicking the process by which researchers would draw samples from the population of ML studies reported in the literature. When applying a linear SVM with LOOCV, as is the most common approach in the neuroimaging literature\cite{Arbabshirani2017}, we observed higher risk for artificially high performance estimates in smaller samples. Importantly, our analyses then revealed that this is primarily due to small test set size, not training set size. Generally, this shows that small test sample size alone may explain many of the highly optimistic results published in recent years. When considering the well-established effect of publication bias, this finding appears even more likely.
+
+    Our results are the first to disentangle the effects of training and test set size effects which are typically inseparable in common cross-validation frameworks such as LOOCV. This delineation of effects enabled two important insights for biomarker discovery and outcome prediction. First, researchers need to validate their models on large, independent test sets. Our results indicate that in the PAC dataset, a test set size of $N=100$ was already sufficient to lower the probability of obtaining artificially good performance (i.e. \SI{70}{\percent} or higher) to \SI{13}{\percent}. With a median $N$ of less than \num{100} in many published studies\cite{Arbabshirani2017}, this may seem challenging. However, online infrastructure for independent machine learning model evaluation is available (e.g. \url{www.photon-ai.com/repo}). If researchers open-source their models, anyone - independent of technical knowledge or machine learning expertise - can evaluate them. This way, large independent test datasets can be obtained in a short time without the need for data sharing. This is not restricted to neuroimaging data, but any machine learning model. In addition, efforts from consortia will also help to mitigate this problem and should be considered by machine learning practitioners.
+
+    Second, the size of the training set alone cannot serve as an indicator of later model performance. Larger training sets are more likely to generalize to new data and broaden model scope (i.e. about which groups within a population a given model can make reasonable predictions), however, in the current analysis, the linear rule learned by an SVM on high-dimensional neuroimaging data could be approximated with only a handful of samples. From a training set size of \num{30} onward, we no longer observed any increase in model performance. This somewhat counterintuitive effect arises whenever a simple rule is approximated. For higher complexity models (i.e. models capable of learning more complex rules), we of course expect performance increases as training sample size increases. However, considering the results of the PAC competition (\url{https://photon-ai.com/pac}), high complexity models such as Deep Learning approaches did not yield higher performance when trained with $~\num{1000}$ samples. Thus, we conclude that simple models are competitive for sample sizes of up to $N=\num{1000}$ for this particular classification problem. Whether more complex rules can be discovered beyond this point or whether other fundamental issues hamper biomarker discovery in psychiatry (cf. e.g. biotype identification\cite{Kircher2018} and normative modelling approaches\cite{Marquand2016}) remains an open question.
+
+    An intuitive criticism of our main analyses would be that it has merely replicated methods similar to those of previous low-quality works (for example, studies using only linear SVMs with default parameters, tested in LOOCV schemes, on samples with many more predictors than observations). Whilst this pipeline configuration was used in the current analysis to a) hold constant properties, that if varied, may have been indistinguishably responsible for changes in accuracy overestimation, and b) replicate the most commonly used ML pipeline configuration in our field, it was important to conduct complementary analyses to rule out these confounds. Therefore, we tested a further 48 ML pipeline configurations (see Supplementary appendix F) using both linear (a linear SVM) and non-linear (a radial basis function SVM and a Random Forest) classifiers. In addition, we conducted PCA based dimensionality reduction as well as f-test based feature selection within these classifiers to delineate whether our findings were confounded by the large size of the predictor space relative to our number of observations. Importantly, all pipeline configurations demonstrated the same pattern of systematic overestimation as that in our main analyses. The second potential criticism of the current work is that these findings may merely be modality specific, limiting the generalizability of these findings across domains. However, the use of a dummy classifier that completely ignored the input predictor space (the voxels), and instead, classified samples based only on their prevalence in training ($\text{MDD}=\SI{50}{\percent}$, $\text{Control}=\SI{50}{\percent}$), showed the same pattern of sample size based systematic overestimation across all pipeline configurations, thus, demonstrating a generalizable statistical effect regardless of the data modality used.
+
+    Given the profound effect of test set size on systematic overestimation, it is important to consider why this effect may arise. Previous work by Schnack \& Kahn\cite{Schnack2016} suggest that patient characteristics in smaller samples tend to be more homogenous. In the case of small $N$, participants may be more likely to be recruited from the same data collection site and of a similar age (for example, in the case of a university recruited convenience sample). In addition, stringent recruitment criterion may be easily met, resulting in a well-defined phenotype that is not truly representative of the parent population of interest. Whilst this explanation makes sense for samples collected in this manner, it fails to explain why we observed this phenomenon in our random sampling procedure, and more importantly, with our dummy classifiers that paid no attention to participants, their characteristics, or the inputted predictor variables. This observation suggests a mechanism for systematic overestimation that is not just sample/patient specific or contingent on sample homogeneity, but instead, inherent in the behaviour of classification models when tested on small samples.
+
+    In addition to sample size, other issues such as data leakage\cite{Kambeitz2017}, are likely contributing to the systematic overestimation seen in the literature. Dedicated cross-platform software to help avoid data leakage is freely available (e.g. PHOTON, \url{www.photon-ai.com} or Sci-kit learn\cite{Scikit-learn2018}). Finally, code should be made available on request or provided in an online repository (e.g. GitHub or GitLab) upon submission for review. In addition, a more elaborate evaluation framework including the analysis of model scope assessment as well as incremental utility and risk analysis is needed to move the field beyond proof-of-concept studies. The success of current translational efforts in neuroimaging and psychiatry will crucially depend on the timely adoption of guidelines and rules for medical machine learning models (for an in-depth introduction, see \cite{Hahn2019}).
+
+    In summary, our results indicate that - while many of the most highly published results might strongly overestimate true performance - evaluation on large test sets constitutes a straightforward remedy. Given that simple, low-complexity models such as linear SVMs did not gain from larger training set size, researchers should not discard their models due to low training $N$ but seek evaluation on a large test set for any model showing good performance.
+
+    \section*{Acknowledgements}
+    \subsection*{FOR2107}
+    This work was funded by the German Research Foundation (DFG, grant FOR2107 DA1151/5-1 and DA1151/5-2 to UD; SFB-TRR58, Projects C09 and Z02 to UD) and the Interdisciplinary Center for Clinical Research (IZKF) of the medical faculty of Münster (grant Dan3/012/17 to UD). TH was supported by the German Research Foundation (DFG grants HA7070/2-2, HA7070/3, HA7070/4).
+
+    This work is part of the German multicenter consortium "Neurobiology of Affective Disorders. A translational perspective on brain structure and function", funded by the German Research Foundation (Deutsche Forschungsgemeinschaft DFG; Forschungsgruppe/Research Unit FOR2107).
+
+    \paragraph{Principal investigators (PIs) with respective areas of responsibility in the FOR2107 consortium are:}
+    Work Package WP1, FOR2107/MACS cohort and brain imaging: Tilo Kircher (speaker FOR2107; DFG grant numbers KI 588/14-1, KI 588/14-2), Udo Dannlowski (co-speaker FOR2107; DA 1151/5-1, DA 1151/5-2), Axel Krug (KR 3822/5-1, KR 3822/7-2), Igor Nenadic (NE 2254/1-2), Carsten Konrad (KO 4291/3-1). WP2, animal phenotyping: Markus Wöhr (WO 1732/4-1, WO 1732/4-2), Rainer Schwarting (SCHW 559/14-1, SCHW 559/14-2). WP3, miRNA: Gerhard Schratt (SCHR 1136/3-1, 1136/3-2). WP4, immunology, mitochondriae: Judith Alferink (AL 1145/5-2), Carsten Culmsee (CU 43/9-1, CU 43/9-2), Holger Garn (GA 545/5-1, GA 545/7-2). WP5, genetics: Marcella Rietschel (RI 908/11-1, RI 908/11-2), Markus Nöthen (NO 246/10-1, NO 246/10-2), Stephanie Witt (WI 3439/3-1, WI 3439/3-2). WP6, multi method data analytics: Andreas Jansen (JA 1890/7-1, JA 1890/7-2), Tim Hahn (HA 7070/2-2), Bertram Müller-Myhsok (MU1315/8-2), Astrid Dempfle (DE 1614/3-1, DE 1614/3-2). CP1, biobank: Petra Pfefferle (PF 784/1-1, PF 784/1-2), Harald Renz (RE 737/20-1, 737/20-2). CP2, administration. Tilo Kircher (KI 588/15-1, KI 588/17-1), Udo Dannlowski (DA 1151/6-1), Carsten Konrad (KO 4291/4-1).
+
+    \paragraph{Data access and responsibility:}
+    All PIs take responsibility for the integrity of the respective study data and their components. All authors and coauthors had full access to all study data.
+
+    \paragraph{Acknowledgements and members by Work Package (WP):}
+    \subparagraph{WP1:}
+    Henrike Bröhl, Katharina Brosch, Bruno Dietsche, Rozbeh Elahi, Jennifer Engelen, Sabine Fischer, Jessica Heinen, Svenja Klingel, Felicitas Meier, Tina Meller, Torsten Sauder, Simon Schmitt, Frederike Stein, Annette Tittmar, Dilara Yüksel (Dept. of Psychiatry, Marburg University). Mechthild Wallnig, Rita Werner (Core-Facility Brainimaging, Marburg University). Carmen Schade-Brittinger, Maik Hahmann (Coordinating Centre for Clinical Trials, Marburg). Michael Putzke (Psychiatric Hospital, Friedberg). Rolf Speier, Lutz Lenhard (Psychiatric Hospital, Haina). Birgit Köhnlein (Psychiatric Practice, Marburg). Peter Wulf, Jürgen Kleebach, Achim Becker (Psychiatric Hospital Hephata, Schwalmstadt-Treysa). Ruth Bär (Care facility Bischoff, Neunkirchen). Matthias Müller, Michael Franz, Siegfried Scharmann, Anja Haag, Kristina Spenner, Ulrich Ohlenschläger (Psychiatric Hospital Vitos, Marburg). Matthias Müller, Michael Franz, Bernd Kundermann (Psychiatric Hospital Vitos, Gießen). Christian Bürger, Fanni Dzvonyar, Verena Enneking, Stella Fingas, Janik Goltermann, Hannah Lemke, Susanne Meinert, Jonathan Repple, Kordula Vorspohl, Bettina Walden, Dario Zaremba (Dept. of Psychiatry, University of Münster). Harald Kugel, Jochen Bauer, Walter Heindel, Birgit Vahrenkamp (Dept. of Clinical Radiology, University of Münster). Gereon Heuft, Gudrun Schneider (Dept. of Psychosomatics and Psychotherapy, University of Münster). Thomas Reker (LWL-Hospital Münster). Gisela Bartling (IPP Münster). Ulrike Buhlmann (Dept. of Clinical Psychology, University of Münster).
+    \subparagraph{WP2:} Marco Bartz, Miriam Becker, Christine Blöcher, Annuska Berz, Moria Braun, Ingmar Conell, Debora dalla Vecchia, Darius Dietrich, Ezgi Esen, Sophia Estel, Jens Hensen, Ruhkshona Kayumova, Theresa Kisko, Rebekka Obermeier, Anika Pützer, Nivethini Sangarapillai, Özge Sungur, Clara Raithel, Tobias Redecker, Vanessa Sandermann, Finnja Schramm, Linda Tempel, Natalie Vermehren, Jakob Vörckel, Stephan Weingarten, Maria Willadsen, Cüneyt Yildiz (Faculty of Psychology, Marburg University).
+    WP4: Jana Freff, Silke Jörgens, Kathrin Schwarte (Dept. of Psychiatry, University of Münster). Susanne Michels, Goutham Ganjam, Katharina Elsässer (Faculty of Pharmacy, Marburg University). Felix Ruben Picard, Nicole Löwer, Thomas Ruppersberg (Institute of Laboratory Medicine and Pathobiochemistry, Marburg University).
+
+    \subparagraph{WP5:} Helene Dukal, Christine Hohmeyer, Lennard Stütz, Viola Schwerdt, Fabian Streit, Josef Frank, Lea Sirignano (Dept. of Genetic Epidemiology, Central Institute of Mental Health, Medical Faculty Mannheim, Heidelberg University).
+    WP6: Anastasia Benedyk, Miriam Bopp, Roman Keßler, Maximilian Lückel, Verena Schuster, Christoph Vogelbacher (Dept. of Psychiatry, Marburg University). Jens Sommer, Olaf Steinsträter (Core-Facility Brainimaging, Marburg University). Thomas W.D. Möbius (Institute of Medical Informatics and Statistics, Kiel University).
+
+    \subparagraph{CP1:} Julian Glandorf, Fabian Kormann, Arif Alkan, Fatana Wedi, Lea Henning, Alena Renker, Karina Schneider, Elisabeth Folwarczny, Dana Stenzel, Kai Wenk, Felix Picard, Alexandra Fischer, Sandra Blumenau, Beate Kleb, Doris Finholdt, Elisabeth Kinder, Tamara Wüst, Elvira Przypadlo, Corinna Brehm (Comprehensive Biomaterial Bank Marburg, Marburg University).
+
+    The FOR2107 cohort project (WP1) was approved by the Ethics Committees of the Medical Faculties, University of Marburg (AZ: 07/14) and University of Münster (AZ: 2014-422-b-S).
+
+    \section*{Conflict of Interest}
+    Biomedical financial interests or potential conflicts of interest: Tilo Kircher received unrestricted educational grants from Servier, Janssen, Recordati, Aristo, Otsuka, neuraxpharm.
+
+    The other authors (Claas Flint, Micah Cearns, Nils Opel, Ronny Redlich, David M. A. Mehler, Daniel Emden, Nils R. Winter, Ramona Leenings, Simon B. Eickhoff, Axel Krug, Igor Nenadic, Volker Arolt, Scott Clark, Xiaoyi Jiang, Udo Dannlowski, Tim Hahn) declare no conflicts of interest.
+
+
+    \bibliographystyle{unsrt}
+    \bibliography{references}
+
+
+    %%%%%%%%%% Merge with supplemental materials %%%%%%%%%%
+    \newpage
+    \appendix
+    %\widetext
+
+    \lhead{\textsc{Supplements}}
+
+    \chead{Performance Overestimation in Neuroimaging Studies of Depression}
+    \begin{center}
+        \LARGE{\textsc{Supplemental Materials}} \\ \Large{Systematic Overestimation of Machine Learning Performance \\ in Neuroimaging Studies of Depression}
+    \end{center}
+
+    \setcounter{equation}{1}
+    \setcounter{figure}{0}
+    \setcounter{table}{0}
+    \setcounter{page}{1}
+    \makeatletter
+    \renewcommand\thefigure{\thesection.\arabic{figure}}
+    \renewcommand\thetable{\thesection.\arabic{table}}
+
+    \input{supplements_texversion.tex}
+
+\end{document}

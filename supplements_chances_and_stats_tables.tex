@@ -1,0 +1,336 @@
+
+\begin{table}[t]
+    \begin{center}
+        \begin{subtable}[c]{\textwidth}
+            \begin{center}
+                \begin{tabular}{rcccccccccc}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
+                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                    \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{overall sample size}}}
+                                            & \multicolumn{1}{c|}{10}  & \num{0.54}  & \num{0.54}  & \num{0.43}  & \num{0.33}  & \num{0.15}  & \num{0.15}  & \num{0.05}  & \num{0.05}  & \num{0.01}  \\
+                                            & \multicolumn{1}{c|}{20}  & \num{0.64}  & \num{0.52}  & \num{0.40}  & \num{0.24}  & \num{0.13}  & \num{0.06}  & \num{0.01}  & \num{0.01}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{30}  & \num{0.70}  & \num{0.61}  & \num{0.39}  & \num{0.29}  & \num{0.11}  & \num{0.06}  & \num{0.01}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{40}  & \num{0.78}  & \num{0.63}  & \num{0.47}  & \num{0.23}  & \num{0.09}  & \num{0.02}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{50}  & \num{0.82}  & \num{0.70}  & \num{0.51}  & \num{0.27}  & \num{0.08}  & \num{0.02}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{60}  & \num{0.81}  & \num{0.62}  & \num{0.41}  & \num{0.19}  & \num{0.05}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{70}  & \num{0.88}  & \num{0.72}  & \num{0.42}  & \num{0.20}  & \num{0.07}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{80}  & \num{0.90}  & \num{0.73}  & \num{0.48}  & \num{0.18}  & \num{0.04}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{90}  & \num{0.89}  & \num{0.76}  & \num{0.45}  & \num{0.20}  & \num{0.03}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{100}  & \num{0.93}  & \num{0.75}  & \num{0.47}  & \num{0.17}  & \num{0.02}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{125}  & \num{0.94}  & \num{0.81}  & \num{0.48}  & \num{0.14}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{150}  & \num{0.96}  & \num{0.83}  & \num{0.45}  & \num{0.12}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                    \end{tabular}
+                \subcaption{Probabilities to yield an accuracy exceeding a certain threshold related to the overall sample size.}
+            \end{center}
+        \end{subtable}
+
+        \vspace{5mm}
+
+        \begin{subtable}[c]{0.8\textwidth}
+            \begin{center}
+                \begin{tabular}{rc|ccccc}
+                    & \textbf{$n$} & \textbf{mean} & \textbf{median} & \textbf{min} & \textbf{max} & \textbf{std} \\ \cline{2-7}
+                    \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{overall sample size}}}
+                                            & \multicolumn{1}{c|}{10}  & \num{0.55}  & \num{0.60}  & \num{0.00}  & \num{1.00}  & \num{0.20}  \\
+                                            & \multicolumn{1}{c|}{20}  & \num{0.56}  & \num{0.60}  & \num{0.10}  & \num{0.95}  & \num{0.15}  \\
+                                            & \multicolumn{1}{c|}{30}  & \num{0.58}  & \num{0.58}  & \num{0.20}  & \num{0.87}  & \num{0.12}  \\
+                                            & \multicolumn{1}{c|}{40}  & \num{0.59}  & \num{0.60}  & \num{0.25}  & \num{0.82}  & \num{0.10}  \\
+                                            & \multicolumn{1}{c|}{50}  & \num{0.59}  & \num{0.60}  & \num{0.16}  & \num{0.82}  & \num{0.09}  \\
+                                            & \multicolumn{1}{c|}{60}  & \num{0.58}  & \num{0.58}  & \num{0.32}  & \num{0.82}  & \num{0.08}  \\
+                                            & \multicolumn{1}{c|}{70}  & \num{0.59}  & \num{0.60}  & \num{0.36}  & \num{0.81}  & \num{0.07}  \\
+                                            & \multicolumn{1}{c|}{80}  & \num{0.59}  & \num{0.60}  & \num{0.36}  & \num{0.76}  & \num{0.07}  \\
+                                            & \multicolumn{1}{c|}{90}  & \num{0.59}  & \num{0.60}  & \num{0.34}  & \num{0.77}  & \num{0.07}  \\
+                                            & \multicolumn{1}{c|}{100}  & \num{0.60}  & \num{0.60}  & \num{0.35}  & \num{0.81}  & \num{0.06}  \\
+                                            & \multicolumn{1}{c|}{125}  & \num{0.59}  & \num{0.60}  & \num{0.41}  & \num{0.74}  & \num{0.05}  \\
+                                            & \multicolumn{1}{c|}{150}  & \num{0.59}  & \num{0.59}  & \num{0.41}  & \num{0.73}  & \num{0.05}  \\
+                                    \end{tabular}
+                \subcaption{Summary of the accuracy value distributions for certain overall sample size.}
+            \end{center}
+        \end{subtable}
+
+        \caption[Varying overall set size with a linear SVM and LOOCV]{Effects of varying overall sample sizes for training and testing a linear SVM employing LOOCV.}
+        \label{tab:overall_linear_svm_loocv}
+
+    \end{center}
+\end{table}
+
+
+\begin{table}[t]
+    \begin{center}
+        \begin{subtable}[c]{\textwidth}
+            \begin{center}
+                \begin{tabular}{rcccccccccc}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
+                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                    \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{overall sample size}}}
+                                            & \multicolumn{1}{c|}{10}  & \num{0.25}  & \num{0.25}  & \num{0.17}  & \num{0.10}  & \num{0.03}  & \num{0.03}  & \num{0.01}  & \num{0.01}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{20}  & \num{0.32}  & \num{0.18}  & \num{0.10}  & \num{0.04}  & \num{0.02}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{30}  & \num{0.33}  & \num{0.22}  & \num{0.06}  & \num{0.03}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{40}  & \num{0.37}  & \num{0.18}  & \num{0.09}  & \num{0.02}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{50}  & \num{0.39}  & \num{0.21}  & \num{0.07}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{60}  & \num{0.40}  & \num{0.16}  & \num{0.04}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{70}  & \num{0.40}  & \num{0.16}  & \num{0.02}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{80}  & \num{0.41}  & \num{0.13}  & \num{0.03}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{90}  & \num{0.41}  & \num{0.14}  & \num{0.02}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{100}  & \num{0.43}  & \num{0.11}  & \num{0.02}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{125}  & \num{0.46}  & \num{0.13}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{150}  & \num{0.44}  & \num{0.09}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                    \end{tabular}
+                \subcaption{Probabilities to yield an accuracy exceeding a certain threshold related to the overall sample size.}
+            \end{center}
+        \end{subtable}
+
+        \vspace{5mm}
+
+        \begin{subtable}[c]{0.8\textwidth}
+            \begin{center}
+                \begin{tabular}{rc|ccccc}
+                    & \textbf{$n$} & \textbf{mean} & \textbf{median} & \textbf{min} & \textbf{max} & \textbf{std} \\ \cline{2-7}
+                    \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{overall sample size}}}
+                                            & \multicolumn{1}{c|}{10}  & \num{0.44}  & \num{0.40}  & \num{0.00}  & \num{1.00}  & \num{0.17}  \\
+                                            & \multicolumn{1}{c|}{20}  & \num{0.47}  & \num{0.45}  & \num{0.15}  & \num{0.80}  & \num{0.11}  \\
+                                            & \multicolumn{1}{c|}{30}  & \num{0.48}  & \num{0.47}  & \num{0.23}  & \num{0.80}  & \num{0.09}  \\
+                                            & \multicolumn{1}{c|}{40}  & \num{0.49}  & \num{0.50}  & \num{0.25}  & \num{0.70}  & \num{0.08}  \\
+                                            & \multicolumn{1}{c|}{50}  & \num{0.49}  & \num{0.48}  & \num{0.28}  & \num{0.74}  & \num{0.07}  \\
+                                            & \multicolumn{1}{c|}{60}  & \num{0.49}  & \num{0.50}  & \num{0.28}  & \num{0.68}  & \num{0.06}  \\
+                                            & \multicolumn{1}{c|}{70}  & \num{0.49}  & \num{0.50}  & \num{0.31}  & \num{0.69}  & \num{0.06}  \\
+                                            & \multicolumn{1}{c|}{80}  & \num{0.49}  & \num{0.50}  & \num{0.30}  & \num{0.66}  & \num{0.06}  \\
+                                            & \multicolumn{1}{c|}{90}  & \num{0.49}  & \num{0.49}  & \num{0.34}  & \num{0.68}  & \num{0.05}  \\
+                                            & \multicolumn{1}{c|}{100}  & \num{0.50}  & \num{0.50}  & \num{0.33}  & \num{0.64}  & \num{0.05}  \\
+                                            & \multicolumn{1}{c|}{125}  & \num{0.50}  & \num{0.50}  & \num{0.33}  & \num{0.63}  & \num{0.05}  \\
+                                            & \multicolumn{1}{c|}{150}  & \num{0.50}  & \num{0.49}  & \num{0.37}  & \num{0.63}  & \num{0.04}  \\
+                                    \end{tabular}
+                \subcaption{Summary of the accuracy value distributions for certain overall sample size.}
+            \end{center}
+        \end{subtable}
+
+        \caption[Varying overall set size with a Dummy Classifier and LOOCV]{Effects of varying overall sample sizes for training and testing a Dummy Classifier employing LOOCV.}
+        \label{tab:overall_dummy_classifier_loocv}
+
+    \end{center}
+\end{table}
+
+
+\begin{table}[t]
+    \begin{center}
+        \begin{subtable}[c]{\textwidth}
+            \begin{center}
+                \begin{tabular}{rcccccccccc}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
+                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                    \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{train sample size}}}
+                                            & \multicolumn{1}{c|}{10}  & \num{0.80}  & \num{0.62}  & \num{0.42}  & \num{0.16}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{20}  & \num{0.87}  & \num{0.75}  & \num{0.55}  & \num{0.20}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{30}  & \num{0.94}  & \num{0.83}  & \num{0.65}  & \num{0.26}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{40}  & \num{0.97}  & \num{0.90}  & \num{0.72}  & \num{0.29}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{50}  & \num{0.97}  & \num{0.93}  & \num{0.76}  & \num{0.31}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{60}  & \num{0.99}  & \num{0.95}  & \num{0.76}  & \num{0.30}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{70}  & \num{0.99}  & \num{0.96}  & \num{0.83}  & \num{0.35}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{80}  & \num{0.99}  & \num{0.97}  & \num{0.83}  & \num{0.34}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{90}  & \num{1.00}  & \num{0.98}  & \num{0.89}  & \num{0.36}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{100}  & \num{1.00}  & \num{0.98}  & \num{0.87}  & \num{0.35}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{125}  & \num{1.00}  & \num{0.99}  & \num{0.91}  & \num{0.39}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{150}  & \num{1.00}  & \num{0.99}  & \num{0.94}  & \num{0.39}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                    \end{tabular}
+                \subcaption{Probabilities to yield an accuracy exceeding a certain threshold related to the train sample size.}
+            \end{center}
+        \end{subtable}
+
+        \vspace{5mm}
+
+        \begin{subtable}[c]{0.8\textwidth}
+            \begin{center}
+                \begin{tabular}{rc|ccccc}
+                    & \textbf{$n$} & \textbf{mean} & \textbf{median} & \textbf{min} & \textbf{max} & \textbf{std} \\ \cline{2-7}
+                    \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{train sample size}}}
+                                            & \multicolumn{1}{c|}{10}  & \num{0.57}  & \num{0.58}  & \num{0.33}  & \num{0.69}  & \num{0.08}  \\
+                                            & \multicolumn{1}{c|}{20}  & \num{0.59}  & \num{0.61}  & \num{0.32}  & \num{0.69}  & \num{0.07}  \\
+                                            & \multicolumn{1}{c|}{30}  & \num{0.61}  & \num{0.62}  & \num{0.36}  & \num{0.69}  & \num{0.06}  \\
+                                            & \multicolumn{1}{c|}{40}  & \num{0.62}  & \num{0.63}  & \num{0.35}  & \num{0.70}  & \num{0.05}  \\
+                                            & \multicolumn{1}{c|}{50}  & \num{0.62}  & \num{0.63}  & \num{0.38}  & \num{0.70}  & \num{0.05}  \\
+                                            & \multicolumn{1}{c|}{60}  & \num{0.63}  & \num{0.64}  & \num{0.46}  & \num{0.70}  & \num{0.04}  \\
+                                            & \multicolumn{1}{c|}{70}  & \num{0.63}  & \num{0.64}  & \num{0.45}  & \num{0.71}  & \num{0.04}  \\
+                                            & \multicolumn{1}{c|}{80}  & \num{0.63}  & \num{0.64}  & \num{0.45}  & \num{0.70}  & \num{0.03}  \\
+                                            & \multicolumn{1}{c|}{90}  & \num{0.64}  & \num{0.64}  & \num{0.49}  & \num{0.71}  & \num{0.03}  \\
+                                            & \multicolumn{1}{c|}{100}  & \num{0.64}  & \num{0.64}  & \num{0.51}  & \num{0.70}  & \num{0.03}  \\
+                                            & \multicolumn{1}{c|}{125}  & \num{0.64}  & \num{0.64}  & \num{0.51}  & \num{0.71}  & \num{0.03}  \\
+                                            & \multicolumn{1}{c|}{150}  & \num{0.64}  & \num{0.65}  & \num{0.51}  & \num{0.70}  & \num{0.03}  \\
+                                    \end{tabular}
+                \subcaption{Summary of the accuracy value distributions for certain train sample size.}
+            \end{center}
+        \end{subtable}
+
+        \caption[Varying train set size and fixed validation set on a linear SVM]{Results of a fixed validation set of $n=300$ and varying train sample sizes on a linear SVM using default parameter. ($C=1$)}
+        \label{tab:train_set_linear_svm}
+
+    \end{center}
+\end{table}
+
+
+\begin{table}[t]
+    \begin{center}
+        \begin{subtable}[c]{\textwidth}
+            \begin{center}
+                \begin{tabular}{rcccccccccc}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
+                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                    \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{train sample size}}}
+                                            & \multicolumn{1}{c|}{10}  & \num{0.49}  & \num{0.04}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{20}  & \num{0.47}  & \num{0.04}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{30}  & \num{0.47}  & \num{0.04}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{40}  & \num{0.47}  & \num{0.03}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{50}  & \num{0.45}  & \num{0.04}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{60}  & \num{0.46}  & \num{0.04}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{70}  & \num{0.48}  & \num{0.03}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{80}  & \num{0.49}  & \num{0.04}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{90}  & \num{0.47}  & \num{0.03}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{100}  & \num{0.48}  & \num{0.05}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{125}  & \num{0.45}  & \num{0.03}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{150}  & \num{0.45}  & \num{0.03}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                    \end{tabular}
+                \subcaption{Probabilities to yield an accuracy exceeding a certain threshold related to the train sample size.}
+            \end{center}
+        \end{subtable}
+
+        \vspace{5mm}
+
+        \begin{subtable}[c]{0.8\textwidth}
+            \begin{center}
+                \begin{tabular}{rc|ccccc}
+                    & \textbf{$n$} & \textbf{mean} & \textbf{median} & \textbf{min} & \textbf{max} & \textbf{std} \\ \cline{2-7}
+                    \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{train sample size}}}
+                                            & \multicolumn{1}{c|}{10}  & \num{0.50}  & \num{0.50}  & \num{0.41}  & \num{0.59}  & \num{0.03}  \\
+                                            & \multicolumn{1}{c|}{20}  & \num{0.50}  & \num{0.50}  & \num{0.39}  & \num{0.59}  & \num{0.03}  \\
+                                            & \multicolumn{1}{c|}{30}  & \num{0.50}  & \num{0.50}  & \num{0.41}  & \num{0.58}  & \num{0.03}  \\
+                                            & \multicolumn{1}{c|}{40}  & \num{0.50}  & \num{0.50}  & \num{0.38}  & \num{0.60}  & \num{0.03}  \\
+                                            & \multicolumn{1}{c|}{50}  & \num{0.50}  & \num{0.50}  & \num{0.42}  & \num{0.61}  & \num{0.03}  \\
+                                            & \multicolumn{1}{c|}{60}  & \num{0.50}  & \num{0.50}  & \num{0.40}  & \num{0.60}  & \num{0.03}  \\
+                                            & \multicolumn{1}{c|}{70}  & \num{0.50}  & \num{0.50}  & \num{0.41}  & \num{0.58}  & \num{0.03}  \\
+                                            & \multicolumn{1}{c|}{80}  & \num{0.50}  & \num{0.50}  & \num{0.42}  & \num{0.62}  & \num{0.03}  \\
+                                            & \multicolumn{1}{c|}{90}  & \num{0.50}  & \num{0.50}  & \num{0.42}  & \num{0.58}  & \num{0.03}  \\
+                                            & \multicolumn{1}{c|}{100}  & \num{0.50}  & \num{0.50}  & \num{0.40}  & \num{0.60}  & \num{0.03}  \\
+                                            & \multicolumn{1}{c|}{125}  & \num{0.50}  & \num{0.50}  & \num{0.40}  & \num{0.59}  & \num{0.03}  \\
+                                            & \multicolumn{1}{c|}{150}  & \num{0.50}  & \num{0.50}  & \num{0.39}  & \num{0.61}  & \num{0.03}  \\
+                                    \end{tabular}
+                \subcaption{Summary of the accuracy value distributions for certain train sample size.}
+            \end{center}
+        \end{subtable}
+
+        \caption[Varying train set size and fixed validation set on a Dummy Classifier]{Results of a fixed validation set of $n=300$ and varying train sample sizes on a Dummy Classifier.}
+        \label{tab:train_dummy_classifier}
+
+    \end{center}
+\end{table}
+
+
+\begin{table}[t]
+    \begin{center}
+        \begin{subtable}[c]{\textwidth}
+            \begin{center}
+                \begin{tabular}{rcccccccccc}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
+                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                    \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
+                                            & \multicolumn{1}{c|}{10}  & \num{0.78}  & \num{0.78}  & \num{0.66}  & \num{0.54}  & \num{0.29}  & \num{0.29}  & \num{0.10}  & \num{0.10}  & \num{0.02}  \\
+                                            & \multicolumn{1}{c|}{20}  & \num{0.91}  & \num{0.81}  & \num{0.69}  & \num{0.48}  & \num{0.30}  & \num{0.17}  & \num{0.06}  & \num{0.06}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{30}  & \num{0.96}  & \num{0.90}  & \num{0.73}  & \num{0.57}  & \num{0.27}  & \num{0.15}  & \num{0.02}  & \num{0.01}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{40}  & \num{0.98}  & \num{0.91}  & \num{0.80}  & \num{0.49}  & \num{0.25}  & \num{0.09}  & \num{0.02}  & \num{0.01}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{50}  & \num{0.99}  & \num{0.97}  & \num{0.85}  & \num{0.58}  & \num{0.22}  & \num{0.07}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{60}  & \num{1.00}  & \num{0.97}  & \num{0.84}  & \num{0.56}  & \num{0.23}  & \num{0.05}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{70}  & \num{1.00}  & \num{0.99}  & \num{0.88}  & \num{0.61}  & \num{0.21}  & \num{0.04}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{80}  & \num{1.00}  & \num{0.99}  & \num{0.90}  & \num{0.56}  & \num{0.17}  & \num{0.02}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{90}  & \num{1.00}  & \num{1.00}  & \num{0.94}  & \num{0.63}  & \num{0.17}  & \num{0.02}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{100}  & \num{1.00}  & \num{0.99}  & \num{0.94}  & \num{0.58}  & \num{0.13}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{125}  & \num{1.00}  & \num{1.00}  & \num{0.97}  & \num{0.63}  & \num{0.13}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{150}  & \num{1.00}  & \num{1.00}  & \num{0.98}  & \num{0.66}  & \num{0.08}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                    \end{tabular}
+                \subcaption{Probabilities to yield an accuracy exceeding a certain threshold related to the test sample size.}
+            \end{center}
+        \end{subtable}
+
+        \vspace{5mm}
+
+        \begin{subtable}[c]{0.8\textwidth}
+            \begin{center}
+                \begin{tabular}{rc|ccccc}
+                    & \textbf{$n$} & \textbf{mean} & \textbf{median} & \textbf{min} & \textbf{max} & \textbf{std} \\ \cline{2-7}
+                    \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
+                                            & \multicolumn{1}{c|}{10}  & \num{0.66}  & \num{0.70}  & \num{0.20}  & \num{1.00}  & \num{0.15}  \\
+                                            & \multicolumn{1}{c|}{20}  & \num{0.67}  & \num{0.65}  & \num{0.35}  & \num{0.95}  & \num{0.11}  \\
+                                            & \multicolumn{1}{c|}{30}  & \num{0.66}  & \num{0.67}  & \num{0.40}  & \num{0.93}  & \num{0.08}  \\
+                                            & \multicolumn{1}{c|}{40}  & \num{0.66}  & \num{0.65}  & \num{0.42}  & \num{0.88}  & \num{0.07}  \\
+                                            & \multicolumn{1}{c|}{50}  & \num{0.66}  & \num{0.66}  & \num{0.48}  & \num{0.88}  & \num{0.06}  \\
+                                            & \multicolumn{1}{c|}{60}  & \num{0.66}  & \num{0.67}  & \num{0.47}  & \num{0.83}  & \num{0.06}  \\
+                                            & \multicolumn{1}{c|}{70}  & \num{0.66}  & \num{0.67}  & \num{0.50}  & \num{0.83}  & \num{0.05}  \\
+                                            & \multicolumn{1}{c|}{80}  & \num{0.66}  & \num{0.66}  & \num{0.49}  & \num{0.80}  & \num{0.05}  \\
+                                            & \multicolumn{1}{c|}{90}  & \num{0.66}  & \num{0.67}  & \num{0.53}  & \num{0.78}  & \num{0.04}  \\
+                                            & \multicolumn{1}{c|}{100}  & \num{0.66}  & \num{0.66}  & \num{0.51}  & \num{0.79}  & \num{0.04}  \\
+                                            & \multicolumn{1}{c|}{125}  & \num{0.66}  & \num{0.66}  & \num{0.54}  & \num{0.78}  & \num{0.03}  \\
+                                            & \multicolumn{1}{c|}{150}  & \num{0.66}  & \num{0.66}  & \num{0.56}  & \num{0.75}  & \num{0.03}  \\
+                                    \end{tabular}
+                \subcaption{Summary of the accuracy value distributions for certain test sample size.}
+            \end{center}
+        \end{subtable}
+
+        \caption[Varying test set size on a fixed pretrained linear SVM]{Effects of varying test sample sizes on a fixed pretrained linear SVM.}
+        \label{tab:test_set_linear_svm}
+
+    \end{center}
+\end{table}
+
+
+\begin{table}[t]
+    \begin{center}
+        \begin{subtable}[c]{\textwidth}
+            \begin{center}
+                \begin{tabular}{rcccccccccc}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
+                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                    \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
+                                            & \multicolumn{1}{c|}{10}  & \num{0.39}  & \num{0.39}  & \num{0.29}  & \num{0.17}  & \num{0.05}  & \num{0.05}  & \num{0.01}  & \num{0.01}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{20}  & \num{0.42}  & \num{0.24}  & \num{0.13}  & \num{0.05}  & \num{0.02}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{30}  & \num{0.42}  & \num{0.28}  & \num{0.10}  & \num{0.05}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{40}  & \num{0.44}  & \num{0.19}  & \num{0.08}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{50}  & \num{0.44}  & \num{0.20}  & \num{0.06}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{60}  & \num{0.45}  & \num{0.15}  & \num{0.03}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{70}  & \num{0.45}  & \num{0.17}  & \num{0.02}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{80}  & \num{0.44}  & \num{0.10}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{90}  & \num{0.43}  & \num{0.12}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{100}  & \num{0.47}  & \num{0.10}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{125}  & \num{0.53}  & \num{0.09}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                            & \multicolumn{1}{c|}{150}  & \num{0.45}  & \num{0.04}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
+                                    \end{tabular}
+                \subcaption{Probabilities to yield an accuracy exceeding a certain threshold related to the test sample size.}
+            \end{center}
+        \end{subtable}
+
+        \vspace{5mm}
+
+        \begin{subtable}[c]{0.8\textwidth}
+            \begin{center}
+                \begin{tabular}{rc|ccccc}
+                    & \textbf{$n$} & \textbf{mean} & \textbf{median} & \textbf{min} & \textbf{max} & \textbf{std} \\ \cline{2-7}
+                    \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
+                                            & \multicolumn{1}{c|}{10}  & \num{0.50}  & \num{0.50}  & \num{0.10}  & \num{1.00}  & \num{0.16}  \\
+                                            & \multicolumn{1}{c|}{20}  & \num{0.50}  & \num{0.50}  & \num{0.15}  & \num{0.85}  & \num{0.11}  \\
+                                            & \multicolumn{1}{c|}{30}  & \num{0.50}  & \num{0.50}  & \num{0.23}  & \num{0.73}  & \num{0.09}  \\
+                                            & \multicolumn{1}{c|}{40}  & \num{0.50}  & \num{0.50}  & \num{0.28}  & \num{0.72}  & \num{0.07}  \\
+                                            & \multicolumn{1}{c|}{50}  & \num{0.50}  & \num{0.50}  & \num{0.32}  & \num{0.70}  & \num{0.06}  \\
+                                            & \multicolumn{1}{c|}{60}  & \num{0.50}  & \num{0.50}  & \num{0.30}  & \num{0.67}  & \num{0.06}  \\
+                                            & \multicolumn{1}{c|}{70}  & \num{0.50}  & \num{0.50}  & \num{0.34}  & \num{0.67}  & \num{0.05}  \\
+                                            & \multicolumn{1}{c|}{80}  & \num{0.50}  & \num{0.50}  & \num{0.35}  & \num{0.64}  & \num{0.05}  \\
+                                            & \multicolumn{1}{c|}{90}  & \num{0.50}  & \num{0.50}  & \num{0.36}  & \num{0.67}  & \num{0.04}  \\
+                                            & \multicolumn{1}{c|}{100}  & \num{0.50}  & \num{0.50}  & \num{0.39}  & \num{0.63}  & \num{0.04}  \\
+                                            & \multicolumn{1}{c|}{125}  & \num{0.50}  & \num{0.50}  & \num{0.39}  & \num{0.62}  & \num{0.04}  \\
+                                            & \multicolumn{1}{c|}{150}  & \num{0.50}  & \num{0.50}  & \num{0.40}  & \num{0.59}  & \num{0.03}  \\
+                                    \end{tabular}
+                \subcaption{Summary of the accuracy value distributions for certain test sample size.}
+            \end{center}
+        \end{subtable}
+
+        \caption[Varying test set size on a fixed pretrained Dummy Classifier]{Effects of varying test sample sizes on a fixed pretrained Dummy Classifier.}
+        \label{tab:test_set_dummy_classifier}
+
+    \end{center}
+\end{table}
+

@@ -1,0 +1,196 @@
+    \section{Summary statistics for the final study sample}
+    \label{cha:summary_statistics}
+	\setcounter{table}{0}
+    \begin{table}[!htp]
+        \begin{center}
+            \begin{subtable}[c]{0.6\textwidth}
+                \begin{center}
+                    \begin{tabular}{rc|cc}
+                        & & {\textbf{MDD}} & {\textbf{HC}}  \\ \cline{2-4}
+                        & n & 934 & 934 \\ \cline{2-4}
+                        \multirow{2}{*}{\textbf{Sex}} & female & 556 & 548  \\
+                        & male & 378 & 368 \\ \cline{2-4}
+                        \multirow{3}{*}{\textbf{Scanner}}  & 1 & 285 & 512 \\
+                        & 2 & 395 & 236 \\
+                        & 3 & 254 & 186 \\
+                    \end{tabular}
+                    \subcaption{Summary of sample size (n), sex and scanner site.}
+                \end{center}
+            \end{subtable}
+
+            \vspace{5mm}
+
+            \begin{subtable}[c]{0.8\textwidth}
+                \begin{center}
+                    \begin{tabular}{rr|SSSS}
+                        & & {\textbf{Mean}} & {\textbf{SD}} & {\textbf{Min}} & {\textbf{Max}} \\ \cline{2-6}
+                        \multirow{2}{*}{\textbf{MDD}} & Age ($n=934$) & 37.76 & 12.94 & 16 & 65 \\
+                        & TIV ($n=933$) & 1575.94 & 152.97 & 1115.00 & 2189.00 \\  \cline{2-6}
+                        \multirow{2}{*}{\textbf{HC}} & Age ($n=934$) & 34.15 & 12.42 & 17 & 65 \\
+                        & TIV ($n=933$) & 1575.61 & 156.38 & 1146.23 & 2706.76 \\
+                    \end{tabular}
+                    \subcaption{Summage of Age (in years) and TIV (total intracranial volume).}
+                \end{center}
+            \end{subtable}
+
+            \caption[Summary statistics for the final study sample.]{Summary statistics for the final study sample. MDD\,=\,Major Depressive Disorder; HC\,=\,Healthy Controls.}
+
+        \end{center}
+    \end{table}
+
+    \FloatBarrier
+
+    \section{Additional tabluar presentations}
+    \setcounter{figure}{0}
+	\setcounter{table}{0}
+    This section contains the tabular presentation of the graphical visualized data in the paper.
+
+    \input{supplements_chances_and_stats_tables.tex}
+    \FloatBarrier
+
+    \section{Influence of the scanner distribution}
+    \label{cha:influence_of_scanner_distribution}
+    \setcounter{figure}{0}
+	\setcounter{table}{0}
+    Scanner site distributions were not well balanced in the PAC sample.
+    This imbalance was even stronger in our randomly drawn sub-samples. In order to determine the influence of the different scanner-sites on model accuracy, we took the same methodical approach that we used for the “train sample size effect analysis” and determined the scanner distribution for each set. Following, we calculated Spearman’s rho between the scanner-distribution and the accuracy of the hold-out test set ($n=300$). The scanner-distribution for each set was approximated using Gini’s index. Here, we show that the scanner distribution has a statistically significant influence on test set accuracy but explains only 0.79\% of the variance.
+
+
+    \FloatBarrier
+
+    \section{Adjustment of SVM regularization based on sample size}
+    \label{cha:adjusted_regularization_svm}
+    \setcounter{figure}{0}
+\setcounter{table}{0}
+    The regularization of a linear SVM depends on the absolute number of outliers in a sample. To exclude the possibility that the use of default hyperparameters (a constant value of $C = 1$) caused the effect that we observed, we have adjusted the SVM regularization (our $C$ hyperparameter) based on the size of each analyses sub-sample. In this adjustment, a constant value $k$ is divided by the sample size. In order to approximate the default parameter $C=1$ on average, we have set $k=75$. For example, $C$ would be $C = 100/75 = \num{1.33}$ for a sample size of $n=100$. In this case, the adjusted regularization did not deliver results as good as what we observed with $C=1$ (see Figure \ref{fig:adj_c_overall}, \ref{fig:adj_c_test}). Therefore, we conclude that the default value of $C=1$ across changing N values did not increase the probability of overestimating accuracy as sample size decreased.
+
+    % Supplement Figure 1
+    \begin{figure}[ht]
+        \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+        \begin{subfigure}[t]{0.61\textwidth}
+            \input{images/overall_set_size_svm_adj_c_chances.pgf}
+            \caption{Probabilities for linear SVMs to yield an accuracy exceeding a certain threshold as a function of sample size employing LOOCV.}
+        \end{subfigure}
+        \hspace{3.0mm}
+        \begin{subfigure}[t]{0.34\textwidth}
+            \input{images/overall_set_size_svm_adj_c_stats.pgf}
+            \caption{Minimum, maximum and mean results for the linear SVMs as a function of sample size employing LOOCV. }
+        \end{subfigure}
+        \caption[Effects of varying overall sample sizes with an adjusted $C$ parameter.]{Effects of varying overall sample sizes employing LOOCV with an adjusted $C$ parameter with $C=\frac{75}{\text{sample size}}$.}
+        \label{fig:adj_c_overall}
+    \end{figure}
+
+    % Supplement Figure 2
+    \begin{figure}[ht]
+        \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+        \begin{subfigure}[t]{0.61\textwidth}
+            \input{images/train_set_size_svm_adj_c_chances.pgf}
+            \caption{Probabilities for linear SVMs to yield an accuracy exceeding a certain threshold as a function of training sample size.}
+        \end{subfigure}
+        \hspace{3.0mm}
+        \begin{subfigure}[t]{0.34\textwidth}
+            \input{images/train_set_size_svm_adj_c_stats.pgf}
+            \caption{Minimum, maximum and mean results for the linear SVMs as a function of training sample size.}
+        \end{subfigure}
+        \caption[Effects of varying train sample sizes with an adjusted $C$ parameter.]{Results as a function of training set sizes with a fixed test set size of $N = 300$ and an adjusted $C$ parameter with $C=\frac{75}{\text{sample size}}$.}
+        \label{fig:adj_c_test}
+    \end{figure}
+    \FloatBarrier
+
+    %    \section{Exploring bigger set sizes}
+    %
+    %    For technical or statistical reasons, we have not considered samples larger than $n=150$. Nevertheless, the question arises what the development looks likel beyond the 150.
+    %    However, with limitations it is possible to get a hint for the behaviour in larger sample sizes.
+    %
+    %    \subsection{Test set sizes}
+    %    A Dummy Classifier, which is independent of the used data, can provide an approximation here. Figure \ref{fig:test_size_dummy_1000} shows the development for test set sizes up to $n=1000$.
+    %    \begin{figure}[ht]
+    %        \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    %        \begin{subfigure}[t]{0.61\textwidth}
+    %            \input{images/DummyClassifier_test_size_chances.pgf}
+    %            \caption{Probabilities for a Dummy Classifier to yield an accuracy exceeding a certain threshold as a function of sample size employing LOOCV.}
+    %        \end{subfigure}
+    %        \hspace{3.0mm}
+    %        \begin{subfigure}[t]{0.34\textwidth}
+    %            \input{images/DummyClassifier_test_size_stats.pgf}
+    %            \caption{Minimum, maximum and mean results for the Dummy as a function of sample size employing LOOCV. }
+    %        \end{subfigure}
+    %        \caption[]{Results as a function of variable test set size based on a Dummy Classifier. The maximum test set size is $n=1,000$.}
+    %        \label{fig:test_size_dummy_1000}
+    %    \end{figure}
+    %
+    %
+    %    \FloatBarrier
+
+    %    \subsection{Overall set size}
+    %    Because with the LOOCV strategy, the computing effort increases qudratically with increasing number of samples, we switch to 10-fold cross valdation strategy here.
+    %    We went up from 20 to 1500 in steps of 10. eFigure \ref{fig:over_all_set_size_n_1500} shows the results which continue the pattern, based on the $n=150$ set size in our study.
+    %
+    %    \begin{figure}[ht]
+    %        \captionsetup[subfigure]{justification=justified,singlelinecheck=false}
+    %        \begin{subfigure}[t]{0.61\textwidth}
+    %            \input{images/investigate_overall_sample_size_big_sample_10_fold_chances.pgf}
+    %            \caption{Probabilities for a Dummy Classifier to yield an accuracy exceeding a certain threshold as a function of sample size employing LOOCV.}
+    %        \end{subfigure}
+    %        \hspace{3.0mm}
+    %        \begin{subfigure}[t]{0.34\textwidth}
+    %            \input{images/investigate_overall_sample_size_big_sample_10_fold_stats.pgf}
+    %            \caption{Minimum, maximum and mean results for the Dummy as a function of sample size employing LOOCV. }
+    %        \end{subfigure}
+    %        \caption[]{Results as a function of variable test set size based on a Dummy Classifier. The maximum test set size is $n=1,000$.}
+    %        \label{fig:over_all_set_size_n_1500}
+    %    \end{figure}
+
+    \section{Alternative Machine Configurations}
+    \label{cha:alternative_machine_configurations}
+    \setcounter{figure}{0}
+\setcounter{table}{0}
+    In order to exclude the possibility that the observed effects can only be traced back to our specific configuration, we have tested other usual configurations. The configurations consist of a preprocessing and a classification. In the preprocessing step, we used a method for reduction of feature space and a method for features selection. The reduction of the feature space was achieved with a Principal Component Analysis (PCA), where only a certain number the first components were used. Afterwards, for feature selection, an ANOVA was calculated and a specific number of feature beginning with the highest F-value were taken. The actual configuration used for preprocessing is listed in Table \ref{tab:preprocessing}.
+    For the classification, we chose three specific machines:
+    \begin{enumerate}
+        \item An SVM with a linear kernel and default parameter. ($C = \num{1.0}$)
+        \item An SVM with a rbf kernel and default parameter ($C = \num{1.0}$; $\gamma = 1/n_\text{feature}$)
+        \item A Random Forrest and default parameter ($n_\text{estimators}=\num{100}$)
+    \end{enumerate}
+
+    In combination with the preprocessing, this results in 48 configurations. Since the found effect is limited to the test set size, we have only repeated our analyses for the test set for each of these configurations.
+
+    \begin{table}[!htp]
+        \begin{center}
+
+            \begin{tabular}{rr|ccccc}
+                & & \multicolumn{5}{c}{\textbf{PCA $n_\text{components}$}}\\
+                & & no & all & \num{500} & \num{50} & \num{10} \\
+                \cline{2-7}
+                \multirow{6}{*}{{\textbf{ANOVA $k_\text{best}$}}} & no & $\times$ & $\times$ & $\times$ & $\times$ & $\times$ \\
+                & \num{10} & $\times$ & $\times$ & $\times$ & $\times$ &   \\
+                & \num{100} & $\times$ & $\times$ & $\times$ & &   \\
+                & \num{1000} & $\times$ & $\times$ & & &   \\
+                & \num{10000} & $\times$ & & & &   \\
+                & \num{50000} & $\times$ & & & &   \\
+
+            \end{tabular}
+            \caption[Configurations for the preprocessing]{The $\times$ marks the used combinations of configurations for the preprocessing. The \emph{no}-label means that this preprocessing step were left out.}
+            \label{tab:preprocessing}
+        \end{center}
+    \end{table}
+
+    \FloatBarrier
+
+    \subsection{Results}
+    \label{cha:alternative_machine_configuration_results}
+    The results are comparable to the original used configuration, an SVM with a linear kernel and no preprocessing (see Figure \ref{fig:no_PCA_no_selection_RandomForest} to \ref{fig:PCA_all_components_1000_best_selected_LinearSVC} and Table \ref{tab:no_PCA_no_selection_RandomForest} to \ref{tab:PCA_all_components_1000_best_selected_LinearSVC}). The results thus underline a generally valid character of the findings.
+    An outlier in the results can be found for a specific configuration, a PCA with 10 components and the SVM with rbf kernel (see Figure \ref{fig:PCA_10_components_no_selection_SVC} and Table \ref{tab:PCA_10_components_no_selection_SVC}). This result can be explained due overfitting, the machine constantly returns one constant class as prediction.
+    \FloatBarrier
+
+    \subsubsection{Graphical results representation}
+
+    \input{supplements_alternative_machines_graphical.tex}
+
+    \FloatBarrier
+
+    \subsubsection{Tabular results representation}
+    \input{supplements_alternative_machines_tabular.tex}
+
+
+\end{document}
