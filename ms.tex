@@ -305,7 +305,6 @@ In summary, our results indicate that - while many of the most highly published 
     %%%%%%%%%% Merge with supplemental materials %%%%%%%%%%
     \newpage
     \appendix
-    %\widetext
 
     \lhead{\scshape \footnotesize Supplements}
 
@@ -318,13 +317,13 @@ In summary, our results indicate that - while many of the most highly published 
     \setcounter{figure}{0}
     \setcounter{table}{0}
     \setcounter{page}{1}
-    %\makeatletter
     \renewcommand\thefigure{\thesection.\arabic{figure}}
     \renewcommand\thetable{\thesection.\arabic{table}}
 
     \input{supplements_texversion.tex}
 
-
+    \FloatBarrier
+    
     \section{Abbreviations}
     \input{abbreviations.tex}
 

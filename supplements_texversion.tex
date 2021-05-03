@@ -54,7 +54,7 @@
 The medical machine learning lab from Prof. Dr. Tim Hahn invited teams from all over the world to develop a model classifying patients suffering from \ac{mdd} and \ac{hc} individuals based on structural Magnetic Resonance Imaging (sMRI) data. This competition was called \emph{Predictive Analytics Competition 2018} (\acs{pac} 2018).
 
 \subsection*{Data}
-The data for this competition - comprising sMRI datasets with and without MDD from $N\,=\,\num{2240}$ subjects - was provided by the \emph{Institute of Translational Psychiatry}, Münster.
+The data for this competition - comprising structured \ac{mri} datasets with and without MDD from $N\,=\,\num{2240}$ subjects - was provided by the \emph{Institute of Translational Psychiatry}, Münster.
 The images were preprocessed in advanced with the SPM toolbox CAT-12  (Matlab 9.0 / SMP12 rev. 6685 / CAT12 v.1184)  and quality checked. The participants got, additional to the diagnosis, the age, gender, \ac{tiv} and the scanner-site to consider them as covariates.
 
 The data was split into a training and test set in advance (Table~\ref{tab:pac_datasplit}). The test set was held back and only used in the final step to designate the winner.
@@ -153,7 +153,7 @@ This imbalance was even stronger in our randomly drawn sub-samples. To determine
 \FloatBarrier
 
 
-\section{Adjustment of \ac{svm} regularization based on sample size}
+\section{Adjustment of SVM regularization based on sample size}
 \label{cha:adjustment-svm-regularization}
 The regularization of a linear \ac{svm} depends on the absolute number of outliers in a sample. To exclude the possibility that the use of default hyperparameters (a constant value of $C = 1$) caused the effect that we observed, we have adjusted the \ac{svm} regularization (our $C$ hyperparameter) based on the size of each analyses sub-sample. In this adjustment, a constant value $k$ is divided by the sample size. To approximate the default parameter $C=1$ on average, we have set $k=75$. For example, $C$ would be $C = 100/75 = \num{1.33}$ for a sample size of $n=100$. In this case, the adjusted regularization did not deliver results as good as what we observed with $C=1$ (see Figure~\ref{fig:adj_c_overall},~\ref{fig:adj_c_test}). Therefore, we conclude that the default value of $C=1$ across changing N values did not increase the probability of misestimating accuracy as sample size decreased.
 
