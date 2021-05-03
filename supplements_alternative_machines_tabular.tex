@@ -2,9 +2,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.79}  & \num{0.79}  & \num{0.65}  & \num{0.54}  & \num{0.28}  & \num{0.28}  & \num{0.08}  & \num{0.08}  & \num{0.01}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.92}  & \num{0.81}  & \num{0.67}  & \num{0.47}  & \num{0.29}  & \num{0.15}  & \num{0.07}  & \num{0.06}  & \num{0.00}  \\
@@ -57,9 +68,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.79}  & \num{0.79}  & \num{0.65}  & \num{0.55}  & \num{0.29}  & \num{0.29}  & \num{0.10}  & \num{0.10}  & \num{0.01}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.91}  & \num{0.80}  & \num{0.65}  & \num{0.45}  & \num{0.25}  & \num{0.12}  & \num{0.04}  & \num{0.03}  & \num{0.00}  \\
@@ -102,7 +124,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. SVM (kernel = rbf); No preprocessing]{Results as a function of variable test set sizes with a fixed classifier. An \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+        \caption[Effects of varying test sample size. SVM (kernel = RBF); No preprocessing]{Results as a function of variable test set sizes with a fixed classifier. An \textbf{{SVM}} with an \textbf{{RBF kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
         \label{tab:no_PCA_no_selection_SVC}
 
     \end{center}
@@ -112,9 +134,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.77}  & \num{0.77}  & \num{0.63}  & \num{0.53}  & \num{0.27}  & \num{0.27}  & \num{0.08}  & \num{0.08}  & \num{0.01}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.90}  & \num{0.78}  & \num{0.65}  & \num{0.46}  & \num{0.27}  & \num{0.14}  & \num{0.05}  & \num{0.04}  & \num{0.00}  \\
@@ -157,7 +190,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Linear SVM; No preprocessing]{Results as a function of variable test set sizes with a fixed classifier. An \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+        \caption[Effects of varying test sample size. Linear SVM; No preprocessing]{Results as a function of variable test set sizes with a fixed classifier. A \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
         \label{tab:no_PCA_no_selection_LinearSVC}
 
     \end{center}
@@ -167,9 +200,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.67}  & \num{0.67}  & \num{0.52}  & \num{0.41}  & \num{0.18}  & \num{0.18}  & \num{0.06}  & \num{0.06}  & \num{0.01}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.81}  & \num{0.64}  & \num{0.49}  & \num{0.28}  & \num{0.13}  & \num{0.05}  & \num{0.01}  & \num{0.01}  & \num{0.00}  \\
@@ -212,7 +256,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Random Forest; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+        \caption[Effects of varying test sample size. Random Forest; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{10 features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
         \label{tab:no_PCA_10_best_selected_RandomForest}
 
     \end{center}
@@ -222,9 +266,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.77}  & \num{0.77}  & \num{0.64}  & \num{0.54}  & \num{0.28}  & \num{0.28}  & \num{0.09}  & \num{0.09}  & \num{0.01}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.90}  & \num{0.80}  & \num{0.66}  & \num{0.45}  & \num{0.26}  & \num{0.12}  & \num{0.05}  & \num{0.04}  & \num{0.00}  \\
@@ -267,7 +322,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+        \caption[Effects of varying test sample size. SVM (kernel = RBF); Preprocessing: ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{10 features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with an \textbf{{RBF kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
         \label{tab:no_PCA_10_best_selected_SVC}
 
     \end{center}
@@ -277,9 +332,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.80}  & \num{0.80}  & \num{0.69}  & \num{0.57}  & \num{0.30}  & \num{0.30}  & \num{0.11}  & \num{0.11}  & \num{0.02}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.93}  & \num{0.84}  & \num{0.72}  & \num{0.51}  & \num{0.32}  & \num{0.15}  & \num{0.07}  & \num{0.05}  & \num{0.01}  \\
@@ -322,7 +388,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{10 features} were taken based on the ANOVA F-values. Following, a \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
         \label{tab:no_PCA_10_best_selected_LinearSVC}
 
     \end{center}
@@ -332,9 +398,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.73}  & \num{0.73}  & \num{0.62}  & \num{0.49}  & \num{0.24}  & \num{0.24}  & \num{0.09}  & \num{0.09}  & \num{0.01}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.86}  & \num{0.73}  & \num{0.58}  & \num{0.37}  & \num{0.19}  & \num{0.09}  & \num{0.03}  & \num{0.03}  & \num{0.00}  \\
@@ -377,7 +454,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Random Forest; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{100} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+        \caption[Effects of varying test sample size. Random Forest; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{100 features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
         \label{tab:no_PCA_100_best_selected_RandomForest}
 
     \end{center}
@@ -387,9 +464,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.73}  & \num{0.73}  & \num{0.60}  & \num{0.47}  & \num{0.20}  & \num{0.20}  & \num{0.05}  & \num{0.05}  & \num{0.01}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.86}  & \num{0.71}  & \num{0.56}  & \num{0.34}  & \num{0.19}  & \num{0.07}  & \num{0.02}  & \num{0.01}  & \num{0.00}  \\
@@ -432,7 +520,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{100} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+        \caption[Effects of varying test sample size. SVM (kernel = RBF); Preprocessing: ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{100 features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with an \textbf{{RBF kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
         \label{tab:no_PCA_100_best_selected_SVC}
 
     \end{center}
@@ -442,9 +530,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.69}  & \num{0.69}  & \num{0.56}  & \num{0.44}  & \num{0.19}  & \num{0.19}  & \num{0.05}  & \num{0.05}  & \num{0.00}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.81}  & \num{0.69}  & \num{0.54}  & \num{0.32}  & \num{0.16}  & \num{0.06}  & \num{0.02}  & \num{0.02}  & \num{0.00}  \\
@@ -487,7 +586,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{100} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{100 features} were taken based on the ANOVA F-values. Following, a \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
         \label{tab:no_PCA_100_best_selected_LinearSVC}
 
     \end{center}
@@ -497,9 +596,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.81}  & \num{0.81}  & \num{0.71}  & \num{0.60}  & \num{0.35}  & \num{0.35}  & \num{0.11}  & \num{0.11}  & \num{0.02}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.94}  & \num{0.84}  & \num{0.72}  & \num{0.52}  & \num{0.33}  & \num{0.16}  & \num{0.06}  & \num{0.05}  & \num{0.01}  \\
@@ -542,7 +652,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Random Forest; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{1000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{1000} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+        \caption[Effects of varying test sample size. Random Forest; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{1000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{1,000 features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
         \label{tab:no_PCA_1000_best_selected_RandomForest}
 
     \end{center}
@@ -552,9 +662,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.82}  & \num{0.82}  & \num{0.69}  & \num{0.62}  & \num{0.35}  & \num{0.35}  & \num{0.13}  & \num{0.13}  & \num{0.03}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.93}  & \num{0.84}  & \num{0.72}  & \num{0.53}  & \num{0.33}  & \num{0.17}  & \num{0.06}  & \num{0.06}  & \num{0.00}  \\
@@ -597,7 +718,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: ANOVA feature selection ($k_\text{best} = \num{1000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{1000} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+        \caption[Effects of varying test sample size. SVM (kernel = RBF); Preprocessing: ANOVA feature selection ($k_\text{best} = \num{1000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{1,000 features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with an \textbf{{RBF kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
         \label{tab:no_PCA_1000_best_selected_SVC}
 
     \end{center}
@@ -607,9 +728,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.61}  & \num{0.61}  & \num{0.44}  & \num{0.33}  & \num{0.13}  & \num{0.13}  & \num{0.04}  & \num{0.04}  & \num{0.00}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.68}  & \num{0.51}  & \num{0.35}  & \num{0.17}  & \num{0.07}  & \num{0.03}  & \num{0.01}  & \num{0.01}  & \num{0.00}  \\
@@ -652,7 +784,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{1000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{1000} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{1000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{1,000 features} were taken based on the ANOVA F-values. Following, a \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
         \label{tab:no_PCA_1000_best_selected_LinearSVC}
 
     \end{center}
@@ -662,9 +794,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.84}  & \num{0.84}  & \num{0.73}  & \num{0.61}  & \num{0.34}  & \num{0.34}  & \num{0.13}  & \num{0.13}  & \num{0.02}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.94}  & \num{0.86}  & \num{0.75}  & \num{0.56}  & \num{0.39}  & \num{0.19}  & \num{0.08}  & \num{0.07}  & \num{0.01}  \\
@@ -707,7 +850,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Random Forest; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{10000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10000} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+        \caption[Effects of varying test sample size. Random Forest; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{10000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{10,000 features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
         \label{tab:no_PCA_10000_best_selected_RandomForest}
 
     \end{center}
@@ -717,9 +860,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.82}  & \num{0.82}  & \num{0.71}  & \num{0.61}  & \num{0.35}  & \num{0.35}  & \num{0.13}  & \num{0.13}  & \num{0.03}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.94}  & \num{0.86}  & \num{0.77}  & \num{0.58}  & \num{0.38}  & \num{0.21}  & \num{0.10}  & \num{0.08}  & \num{0.01}  \\
@@ -762,7 +916,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: ANOVA feature selection ($k_\text{best} = \num{10000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10000} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+        \caption[Effects of varying test sample size. SVM (kernel = RBF); Preprocessing: ANOVA feature selection ($k_\text{best} = \num{10000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{10,000 features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with an \textbf{{RBF kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
         \label{tab:no_PCA_10000_best_selected_SVC}
 
     \end{center}
@@ -772,9 +926,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.77}  & \num{0.77}  & \num{0.66}  & \num{0.55}  & \num{0.29}  & \num{0.29}  & \num{0.09}  & \num{0.09}  & \num{0.02}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.89}  & \num{0.79}  & \num{0.66}  & \num{0.43}  & \num{0.24}  & \num{0.12}  & \num{0.04}  & \num{0.02}  & \num{0.00}  \\
@@ -817,7 +982,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{10000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10000} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{10000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{10,000 features} were taken based on the ANOVA F-values. Following, a \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
         \label{tab:no_PCA_10000_best_selected_LinearSVC}
 
     \end{center}
@@ -827,9 +992,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.86}  & \num{0.86}  & \num{0.75}  & \num{0.65}  & \num{0.38}  & \num{0.38}  & \num{0.16}  & \num{0.16}  & \num{0.03}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.96}  & \num{0.89}  & \num{0.80}  & \num{0.61}  & \num{0.42}  & \num{0.24}  & \num{0.11}  & \num{0.10}  & \num{0.01}  \\
@@ -872,7 +1048,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Random Forest; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{50000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{50000} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+        \caption[Effects of varying test sample size. Random Forest; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{50000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{50,000 features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
         \label{tab:no_PCA_50000_best_selected_RandomForest}
 
     \end{center}
@@ -882,9 +1058,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.77}  & \num{0.77}  & \num{0.64}  & \num{0.51}  & \num{0.26}  & \num{0.26}  & \num{0.09}  & \num{0.09}  & \num{0.01}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.89}  & \num{0.77}  & \num{0.64}  & \num{0.40}  & \num{0.23}  & \num{0.10}  & \num{0.03}  & \num{0.02}  & \num{0.00}  \\
@@ -927,7 +1114,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: ANOVA feature selection ($k_\text{best} = \num{50000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{50000} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+        \caption[Effects of varying test sample size. SVM (kernel = RBF); Preprocessing: ANOVA feature selection ($k_\text{best} = \num{50000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{50,000 features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with an \textbf{{RBF kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
         \label{tab:no_PCA_50000_best_selected_SVC}
 
     \end{center}
@@ -937,9 +1124,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.79}  & \num{0.79}  & \num{0.64}  & \num{0.53}  & \num{0.26}  & \num{0.26}  & \num{0.08}  & \num{0.08}  & \num{0.01}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.90}  & \num{0.79}  & \num{0.66}  & \num{0.44}  & \num{0.28}  & \num{0.14}  & \num{0.05}  & \num{0.05}  & \num{0.00}  \\
@@ -982,7 +1180,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{50000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{50000} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: ANOVA feature selection ($k_\text{best} = \num{50000}$)]{Results as a function of variable test set sizes with a fixed classifier. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{50,000 features} were taken based on the ANOVA F-values. Following, a \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
         \label{tab:no_PCA_50000_best_selected_LinearSVC}
 
     \end{center}
@@ -992,9 +1190,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.78}  & \num{0.78}  & \num{0.64}  & \num{0.56}  & \num{0.32}  & \num{0.32}  & \num{0.12}  & \num{0.12}  & \num{0.02}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.93}  & \num{0.83}  & \num{0.70}  & \num{0.49}  & \num{0.32}  & \num{0.16}  & \num{0.07}  & \num{0.06}  & \num{0.00}  \\
@@ -1037,7 +1246,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{10} components} were retained. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+        \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{10 components} were retained. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
         \label{tab:PCA_10_components_no_selection_RandomForest}
 
     \end{center}
@@ -1047,9 +1256,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.03}  & \num{0.03}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.07}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
@@ -1092,7 +1312,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: PCA ($n_\text{components} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{10} components} were retained. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+        \caption[Effects of varying test sample size. SVM (kernel = RBF); Preprocessing: PCA ($n_\text{components} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{10 components} were retained. Following, an \textbf{{SVM}} with an \textbf{{RBF kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
         \label{tab:PCA_10_components_no_selection_SVC}
 
     \end{center}
@@ -1102,9 +1322,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.58}  & \num{0.58}  & \num{0.45}  & \num{0.32}  & \num{0.13}  & \num{0.13}  & \num{0.04}  & \num{0.04}  & \num{0.00}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.70}  & \num{0.52}  & \num{0.37}  & \num{0.17}  & \num{0.07}  & \num{0.02}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
@@ -1147,7 +1378,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{10} components} were retained. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{10 components} were retained. Following, a \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
         \label{tab:PCA_10_components_no_selection_LinearSVC}
 
     \end{center}
@@ -1157,9 +1388,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.79}  & \num{0.79}  & \num{0.67}  & \num{0.56}  & \num{0.31}  & \num{0.31}  & \num{0.10}  & \num{0.10}  & \num{0.02}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.92}  & \num{0.84}  & \num{0.72}  & \num{0.51}  & \num{0.30}  & \num{0.17}  & \num{0.07}  & \num{0.06}  & \num{0.01}  \\
@@ -1202,7 +1444,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \num{50}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{50} components} were retained. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+        \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \num{50}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{50 components} were retained. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
         \label{tab:PCA_50_components_no_selection_RandomForest}
 
     \end{center}
@@ -1212,9 +1454,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.15}  & \num{0.15}  & \num{0.01}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.27}  & \num{0.04}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
@@ -1257,7 +1510,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: PCA ($n_\text{components} = \num{50}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{50} components} were retained. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+        \caption[Effects of varying test sample size. SVM (kernel = RBF); Preprocessing: PCA ($n_\text{components} = \num{50}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{50 components} were retained. Following, an \textbf{{SVM}} with an \textbf{{RBF kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
         \label{tab:PCA_50_components_no_selection_SVC}
 
     \end{center}
@@ -1267,9 +1520,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.67}  & \num{0.67}  & \num{0.55}  & \num{0.43}  & \num{0.18}  & \num{0.18}  & \num{0.06}  & \num{0.06}  & \num{0.01}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.85}  & \num{0.70}  & \num{0.56}  & \num{0.34}  & \num{0.19}  & \num{0.08}  & \num{0.02}  & \num{0.02}  & \num{0.00}  \\
@@ -1312,7 +1576,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \num{50}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{50} components} were retained. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \num{50}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{50 components} were retained. Following, a \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
         \label{tab:PCA_50_components_no_selection_LinearSVC}
 
     \end{center}
@@ -1322,9 +1586,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.72}  & \num{0.72}  & \num{0.58}  & \num{0.45}  & \num{0.22}  & \num{0.22}  & \num{0.08}  & \num{0.08}  & \num{0.01}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.88}  & \num{0.75}  & \num{0.60}  & \num{0.38}  & \num{0.21}  & \num{0.08}  & \num{0.02}  & \num{0.02}  & \num{0.00}  \\
@@ -1367,7 +1642,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \num{50}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{50} components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+        \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \num{50}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{50 components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{10 features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
         \label{tab:PCA_50_components_10_best_selected_RandomForest}
 
     \end{center}
@@ -1377,9 +1652,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.03}  & \num{0.03}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.08}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
@@ -1422,7 +1708,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: PCA ($n_\text{components} = \num{50}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{50} components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+        \caption[Effects of varying test sample size. SVM (kernel = RBF); Preprocessing: PCA ($n_\text{components} = \num{50}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{50 components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{10 features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with an \textbf{{RBF kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
         \label{tab:PCA_50_components_10_best_selected_SVC}
 
     \end{center}
@@ -1432,9 +1718,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.46}  & \num{0.46}  & \num{0.34}  & \num{0.23}  & \num{0.06}  & \num{0.06}  & \num{0.02}  & \num{0.02}  & \num{0.00}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.54}  & \num{0.35}  & \num{0.23}  & \num{0.09}  & \num{0.04}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
@@ -1477,7 +1774,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \num{50}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{50} components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \num{50}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{50 components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{10 features} were taken based on the ANOVA F-values. Following, a \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
         \label{tab:PCA_50_components_10_best_selected_LinearSVC}
 
     \end{center}
@@ -1487,9 +1784,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.44}  & \num{0.44}  & \num{0.19}  & \num{0.14}  & \num{0.03}  & \num{0.03}  & \num{0.01}  & \num{0.01}  & \num{0.00}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.60}  & \num{0.33}  & \num{0.14}  & \num{0.03}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
@@ -1532,7 +1840,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \num{500}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{500} components} were retained. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+        \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \num{500}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{500 components} were retained. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
         \label{tab:PCA_500_components_no_selection_RandomForest}
 
     \end{center}
@@ -1542,9 +1850,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.12}  & \num{0.12}  & \num{0.01}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.21}  & \num{0.03}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
@@ -1587,7 +1906,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: PCA ($n_\text{components} = \num{500}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{500} components} were retained. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+        \caption[Effects of varying test sample size. SVM (kernel = RBF); Preprocessing: PCA ($n_\text{components} = \num{500}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{500 components} were retained. Following, an \textbf{{SVM}} with an \textbf{{RBF kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
         \label{tab:PCA_500_components_no_selection_SVC}
 
     \end{center}
@@ -1597,9 +1916,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.62}  & \num{0.62}  & \num{0.49}  & \num{0.36}  & \num{0.15}  & \num{0.15}  & \num{0.04}  & \num{0.04}  & \num{0.01}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.75}  & \num{0.56}  & \num{0.41}  & \num{0.23}  & \num{0.11}  & \num{0.05}  & \num{0.01}  & \num{0.01}  & \num{0.00}  \\
@@ -1642,7 +1972,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \num{500}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{500} components} were retained. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \num{500}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{500 components} were retained. Following, a \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
         \label{tab:PCA_500_components_no_selection_LinearSVC}
 
     \end{center}
@@ -1652,9 +1982,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.82}  & \num{0.82}  & \num{0.71}  & \num{0.62}  & \num{0.35}  & \num{0.35}  & \num{0.13}  & \num{0.13}  & \num{0.03}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.94}  & \num{0.85}  & \num{0.74}  & \num{0.54}  & \num{0.34}  & \num{0.17}  & \num{0.06}  & \num{0.05}  & \num{0.00}  \\
@@ -1697,7 +2038,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \num{500}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{500} components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+        \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \num{500}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{500 components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{10 features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
         \label{tab:PCA_500_components_10_best_selected_RandomForest}
 
     \end{center}
@@ -1707,9 +2048,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.36}  & \num{0.36}  & \num{0.11}  & \num{0.07}  & \num{0.01}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.47}  & \num{0.22}  & \num{0.07}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
@@ -1752,7 +2104,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: PCA ($n_\text{components} = \num{500}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{500} components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+        \caption[Effects of varying test sample size. SVM (kernel = RBF); Preprocessing: PCA ($n_\text{components} = \num{500}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{500 components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{10 features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with an \textbf{{RBF kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
         \label{tab:PCA_500_components_10_best_selected_SVC}
 
     \end{center}
@@ -1762,9 +2114,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.74}  & \num{0.74}  & \num{0.61}  & \num{0.50}  & \num{0.24}  & \num{0.24}  & \num{0.07}  & \num{0.07}  & \num{0.01}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.87}  & \num{0.75}  & \num{0.59}  & \num{0.35}  & \num{0.20}  & \num{0.09}  & \num{0.03}  & \num{0.03}  & \num{0.00}  \\
@@ -1807,7 +2170,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \num{500}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{500} components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \num{500}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{500 components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{10 features} were taken based on the ANOVA F-values. Following, a \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
         \label{tab:PCA_500_components_10_best_selected_LinearSVC}
 
     \end{center}
@@ -1817,9 +2180,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.79}  & \num{0.79}  & \num{0.66}  & \num{0.54}  & \num{0.29}  & \num{0.29}  & \num{0.10}  & \num{0.10}  & \num{0.02}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.93}  & \num{0.83}  & \num{0.73}  & \num{0.48}  & \num{0.28}  & \num{0.12}  & \num{0.05}  & \num{0.04}  & \num{0.00}  \\
@@ -1862,7 +2236,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \num{500}$); ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{500} components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{100} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+        \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \num{500}$); ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{500 components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{100 features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
         \label{tab:PCA_500_components_100_best_selected_RandomForest}
 
     \end{center}
@@ -1872,9 +2246,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.37}  & \num{0.37}  & \num{0.08}  & \num{0.07}  & \num{0.01}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.53}  & \num{0.19}  & \num{0.04}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
@@ -1917,7 +2302,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: PCA ($n_\text{components} = \num{500}$); ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{500} components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{100} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+        \caption[Effects of varying test sample size. SVM (kernel = RBF); Preprocessing: PCA ($n_\text{components} = \num{500}$); ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{500 components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{100 features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with an \textbf{{RBF kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
         \label{tab:PCA_500_components_100_best_selected_SVC}
 
     \end{center}
@@ -1927,9 +2312,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.64}  & \num{0.64}  & \num{0.51}  & \num{0.39}  & \num{0.15}  & \num{0.15}  & \num{0.04}  & \num{0.04}  & \num{0.00}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.78}  & \num{0.64}  & \num{0.47}  & \num{0.26}  & \num{0.12}  & \num{0.05}  & \num{0.01}  & \num{0.01}  & \num{0.00}  \\
@@ -1972,7 +2368,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \num{500}$); ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{\num{500} components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{100} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \num{500}$); ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{500 components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{100 features} were taken based on the ANOVA F-values. Following, a \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
         \label{tab:PCA_500_components_100_best_selected_LinearSVC}
 
     \end{center}
@@ -1982,9 +2378,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.67}  & \num{0.67}  & \num{0.55}  & \num{0.42}  & \num{0.19}  & \num{0.19}  & \num{0.04}  & \num{0.04}  & \num{0.00}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.83}  & \num{0.66}  & \num{0.49}  & \num{0.27}  & \num{0.12}  & \num{0.05}  & \num{0.01}  & \num{0.01}  & \num{0.00}  \\
@@ -2037,9 +2444,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.17}  & \num{0.17}  & \num{0.03}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.22}  & \num{0.05}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
@@ -2082,7 +2500,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: PCA ($n_\text{components} = \text{all}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+        \caption[Effects of varying test sample size. SVM (kernel = RBF); Preprocessing: PCA ($n_\text{components} = \text{all}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. Following, an \textbf{{SVM}} with an \textbf{{RBF kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
         \label{tab:PCA_all_components_no_selection_SVC}
 
     \end{center}
@@ -2092,9 +2510,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.79}  & \num{0.79}  & \num{0.66}  & \num{0.54}  & \num{0.27}  & \num{0.27}  & \num{0.09}  & \num{0.09}  & \num{0.02}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.90}  & \num{0.79}  & \num{0.64}  & \num{0.43}  & \num{0.24}  & \num{0.10}  & \num{0.04}  & \num{0.03}  & \num{0.00}  \\
@@ -2137,7 +2566,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \text{all}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \text{all}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. Following, a \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
         \label{tab:PCA_all_components_no_selection_LinearSVC}
 
     \end{center}
@@ -2147,9 +2576,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.75}  & \num{0.75}  & \num{0.62}  & \num{0.50}  & \num{0.24}  & \num{0.24}  & \num{0.09}  & \num{0.09}  & \num{0.02}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.88}  & \num{0.76}  & \num{0.62}  & \num{0.42}  & \num{0.24}  & \num{0.11}  & \num{0.05}  & \num{0.04}  & \num{0.00}  \\
@@ -2192,7 +2632,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+        \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{10 features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
         \label{tab:PCA_all_components_10_best_selected_RandomForest}
 
     \end{center}
@@ -2202,9 +2642,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.34}  & \num{0.34}  & \num{0.12}  & \num{0.09}  & \num{0.01}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.46}  & \num{0.17}  & \num{0.05}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
@@ -2247,7 +2698,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+        \caption[Effects of varying test sample size. SVM (kernel = RBF); Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{10 features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with an \textbf{{RBF kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
         \label{tab:PCA_all_components_10_best_selected_SVC}
 
     \end{center}
@@ -2257,9 +2708,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.11}  & \num{0.11}  & \num{0.07}  & \num{0.03}  & \num{0.01}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.06}  & \num{0.02}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
@@ -2302,7 +2764,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{10} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{10}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{10 features} were taken based on the ANOVA F-values. Following, a \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
         \label{tab:PCA_all_components_10_best_selected_LinearSVC}
 
     \end{center}
@@ -2312,9 +2774,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.70}  & \num{0.70}  & \num{0.58}  & \num{0.47}  & \num{0.22}  & \num{0.22}  & \num{0.06}  & \num{0.06}  & \num{0.01}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.83}  & \num{0.71}  & \num{0.57}  & \num{0.36}  & \num{0.21}  & \num{0.10}  & \num{0.04}  & \num{0.03}  & \num{0.00}  \\
@@ -2357,7 +2830,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{100} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+        \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{100 features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
         \label{tab:PCA_all_components_100_best_selected_RandomForest}
 
     \end{center}
@@ -2367,9 +2840,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.51}  & \num{0.51}  & \num{0.20}  & \num{0.16}  & \num{0.03}  & \num{0.03}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.71}  & \num{0.40}  & \num{0.16}  & \num{0.05}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
@@ -2412,7 +2896,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{100} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+        \caption[Effects of varying test sample size. SVM (kernel = RBF); Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{100 features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with an \textbf{{RBF kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
         \label{tab:PCA_all_components_100_best_selected_SVC}
 
     \end{center}
@@ -2422,9 +2906,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.70}  & \num{0.70}  & \num{0.55}  & \num{0.44}  & \num{0.20}  & \num{0.20}  & \num{0.06}  & \num{0.06}  & \num{0.01}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.83}  & \num{0.67}  & \num{0.52}  & \num{0.31}  & \num{0.17}  & \num{0.07}  & \num{0.01}  & \num{0.01}  & \num{0.00}  \\
@@ -2467,7 +2962,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{100} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{100}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{100 features} were taken based on the ANOVA F-values. Following, a \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
         \label{tab:PCA_all_components_100_best_selected_LinearSVC}
 
     \end{center}
@@ -2477,9 +2972,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.57}  & \num{0.57}  & \num{0.44}  & \num{0.31}  & \num{0.12}  & \num{0.12}  & \num{0.04}  & \num{0.04}  & \num{0.01}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.69}  & \num{0.50}  & \num{0.35}  & \num{0.17}  & \num{0.09}  & \num{0.03}  & \num{0.01}  & \num{0.01}  & \num{0.00}  \\
@@ -2522,7 +3028,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{1000}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{1000} features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
+        \caption[Effects of varying test sample size. Random Forest; Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{1000}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{1,000 features} were taken based on the ANOVA F-values. Following, a \textbf{{Random Forest}} was trained with default parameters. ($n_\text{estimators}=\num{100}$)}
         \label{tab:PCA_all_components_1000_best_selected_RandomForest}
 
     \end{center}
@@ -2532,9 +3038,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.53}  & \num{0.53}  & \num{0.33}  & \num{0.23}  & \num{0.06}  & \num{0.06}  & \num{0.01}  & \num{0.01}  & \num{0.00}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.71}  & \num{0.47}  & \num{0.28}  & \num{0.09}  & \num{0.02}  & \num{0.01}  & \num{0.00}  & \num{0.00}  & \num{0.00}  \\
@@ -2577,7 +3094,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. SVM (kernel = rbf); Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{1000}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{1000} features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with a \textbf{{rbf kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
+        \caption[Effects of varying test sample size. SVM (kernel = RBF); Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{1000}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{1,000 features} were taken based on the ANOVA F-values. Following, an \textbf{{SVM}} with an \textbf{{RBF kernel}} was trained with default parameters. ($C=\num{1.0}$; $\gamma=\sfrac{1}{n_\text{feature}}$)}
         \label{tab:PCA_all_components_1000_best_selected_SVC}
 
     \end{center}
@@ -2587,9 +3104,20 @@
     \begin{center}
         \begin{subtable}[c]{\textwidth}
             \begin{center}
-                \begin{tabular}{rcccccccccc}
-                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy (\%)}} \\
-                    & \multicolumn{1}{c|}{$n$} & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90  \\ \cline{2-11}
+                \begin{tabular}{r
+                c
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]
+                S[table-format=1.2]}
+                    & & \multicolumn{9}{c}{\textbf{$\geq$ accuracy}} \\
+                    & \multicolumn{1}{c|}{$n$} & {50} & {55} & {60} & {65} & {70} & {75} & {80} & {85} & {90}  \\ \cline{2-11}
                     \multirow{12}{*}{\rotatebox[origin=c]{90}{\textbf{test sample size}}}
                                         & \multicolumn{1}{c|}{10}  & \num{0.77}  & \num{0.77}  & \num{0.67}  & \num{0.54}  & \num{0.27}  & \num{0.27}  & \num{0.10}  & \num{0.10}  & \num{0.02}  \\
                                         & \multicolumn{1}{c|}{20}  & \num{0.91}  & \num{0.81}  & \num{0.68}  & \num{0.44}  & \num{0.27}  & \num{0.12}  & \num{0.04}  & \num{0.04}  & \num{0.00}  \\
@@ -2632,7 +3160,7 @@
             \end{center}
         \end{subtable}
 
-        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{1000}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{\num{1000} features} were taken based on the ANOVA F-values. Following, an \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
+        \caption[Effects of varying test sample size. Linear SVM; Preprocessing: PCA ($n_\text{components} = \text{all}$); ANOVA feature selection ($k_\text{best} = \num{1000}$)]{Results as a function of variable test set sizes with a fixed classifier. To reduce the dimensionality of the feature space a \textbf{PCA} was performed and \textbf{all components} were retained. For \textbf{feature selection} an ANOVA was computed inside the the pipeline and the top \textbf{1,000 features} were taken based on the ANOVA F-values. Following, a \textbf{{linear SVM}} was trained with default parameters. ($C=\num{1.0}$)}
         \label{tab:PCA_all_components_1000_best_selected_LinearSVC}
 
     \end{center}
