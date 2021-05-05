@@ -4,24 +4,24 @@ Systematic Misestimation of Machine Learning Performance in Neuroimaging Studies
 
 ### Authors
 
-Claas Flint [![ORCID](ORCIDid_icon16x16.png)](https://orcid.org/0000-0001-5164-8227) <sup>* 1,2</sup>, 
-Micah Cearns [![ORCID](ORCIDid_icon16x16.png)](https://orcid.org/0000-0002-3353-8566) <sup>* 3,5</sup>, 
-Nils Opel [![ORCID](ORCIDid_icon16x16.png)](https://orcid.org/0000-0003-4749-3298) <sup>1</sup>, 
-Ronny Redlich [![ORCID](ORCIDid_icon16x16.png)](https://orcid.org/0000-0002-7018-4525) <sup1></sup>, 
-David M. A. Mehler [![ORCID](ORCIDid_icon16x16.png)](https://orcid.org/0000-0001-6587-2617) <sup>1</sup>, 
-Daniel Emden [![ORCID](ORCIDid_icon16x16.png)](https://orcid.org/0000-0001-7459-6634) <sup>1</sup>, 
-Nils R. Winter [![ORCID](ORCIDid_icon16x16.png)](https://orcid.org/0000-0002-6241-1492) <sup>1</sup>, 
+Claas Flint [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0001-5164-8227) <sup>* 1,2</sup>, 
+Micah Cearns [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0002-3353-8566) <sup>* 3,5</sup>, 
+Nils Opel [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0003-4749-3298) <sup>1</sup>, 
+Ronny Redlich [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0002-7018-4525) <sup1></sup>, 
+David M. A. Mehler [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0001-6587-2617) <sup>1</sup>, 
+Daniel Emden [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0001-7459-6634) <sup>1</sup>, 
+Nils R. Winter [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0002-6241-1492) <sup>1</sup>, 
 Ramona Leenings <sup>1</sup>,
-Simon B. Eickhoff [![ORCID](ORCIDid_icon16x16.png)](https://orcid.org/0000-0001-6363-2759) <sup>4,8</sup>, 
-Tilo Kircher [![ORCID](ORCIDid_icon16x16.png)](https://orcid.org/0000-0002-2514-2625) <sup>6</sup>, 
-Axel Krug [![ORCID](ORCIDid_icon16x16.png)](https://orcid.org/0000-0002-0564-2497) <sup>6</sup>, 
-Igor Nenadic [![ORCID](ORCIDid_icon16x16.png)](https://orcid.org/0000-0002-0749-7473) <sup>6</sup>, 
-Volker Arolt [![ORCID](ORCIDid_icon16x16.png)](https://orcid.org/0000-0002-2445-9778) <sup>1</sup>,
+Simon B. Eickhoff [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0001-6363-2759) <sup>4,8</sup>, 
+Tilo Kircher [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0002-2514-2625) <sup>6</sup>, 
+Axel Krug [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0002-0564-2497) <sup>6</sup>, 
+Igor Nenadic [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0002-0749-7473) <sup>6</sup>, 
+Volker Arolt [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0002-2445-9778) <sup>1</sup>,
 Scott Clark <sup>3</sup>, 
-Bernhard T. Baune [![ORCID](ORCIDid_icon16x16.png)](https://orcid.org/0000-0001-6548-426X) <sup>3,5,7</sup>, 
-Xiaoyi Jiang [![ORCID](ORCIDid_icon16x16.png)](https://orcid.org/0000-0001-7678-9528) <sup>2</sup>,
-Udo Dannlowski [![ORCID](ORCIDid_icon16x16.png)](https://orcid.org/0000-0002-0623-3759) <sup>&dagger; 1</sup>, 
-Tim Hahn [![ORCID](ORCIDid_icon16x16.png)](https://orcid.org/0000-0002-8929-4134) <sup>&dagger; 1</sup>
+Bernhard T. Baune [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0001-6548-426X) <sup>3,5,7</sup>, 
+Xiaoyi Jiang [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0001-7678-9528) <sup>2</sup>,
+Udo Dannlowski [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0002-0623-3759) <sup>&dagger; 1</sup>, 
+Tim Hahn [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0002-8929-4134) <sup>&dagger; 1</sup>
 
 <sup>1</sup>Department of Psychiatry, University of Münster, Germany; 
 <sup>2</sup>Faculty of Mathematics and Computer Science, University of Münster, Germany; 
