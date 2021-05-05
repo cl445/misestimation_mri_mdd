@@ -4,8 +4,8 @@ Systematic Misestimation of Machine Learning Performance in Neuroimaging Studies
 
 ### Authors
 
-Claas Flint [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0001-5164-8227) <sup>* 1,2</sup>, 
-Micah Cearns [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0002-3353-8566) <sup>* 3,5</sup>, 
+Claas Flint [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0001-5164-8227) <sup>&ast;&nbsp;1,2</sup>, 
+Micah Cearns [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0002-3353-8566) <sup>&ast;&nbsp;3,5</sup>, 
 Nils Opel [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0003-4749-3298) <sup>1</sup>, 
 Ronny Redlich [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0002-7018-4525) <sup1></sup>, 
 David M. A. Mehler [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0001-6587-2617) <sup>1</sup>, 
@@ -20,8 +20,8 @@ Volker Arolt [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0002-2445-
 Scott Clark <sup>3</sup>, 
 Bernhard T. Baune [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0001-6548-426X) <sup>3,5,7</sup>, 
 Xiaoyi Jiang [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0001-7678-9528) <sup>2</sup>,
-Udo Dannlowski [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0002-0623-3759) <sup>&dagger; 1</sup>, 
-Tim Hahn [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0002-8929-4134) <sup>&dagger; 1</sup>
+Udo Dannlowski [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0002-0623-3759) <sup>&dagger;&nbsp;1</sup>, 
+Tim Hahn [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0002-8929-4134) <sup>&dagger;&nbsp;1</sup>
 
 <sup>1</sup>Department of Psychiatry, University of Münster, Germany; 
 <sup>2</sup>Faculty of Mathematics and Computer Science, University of Münster, Germany; 
@@ -32,7 +32,7 @@ Tim Hahn [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0002-8929-4134
 <sup>7</sup>The Florey Institute of Neuroscience and Mental Health, The University of Melbourne, Parkville, Australia;
 <sup>8</sup>Institute of Systems Neuroscience, Medical Faculty, Heinrich Heine University Düsseldorf, Düsseldorf, Germany
 
-<sup>*</sup> indicates that the authors contributed equally to the work and should be regarded as first authors.
+<sup>&ast;</sup> indicates that the authors contributed equally to the work and should be regarded as first authors.
 <sup>&dagger;</sup> indicates that the authors contributed equally to the work and should be regarded as senior authors.
 
 Abstract
