@@ -3,9 +3,7 @@
 
 \usepackage{arxiv}
 
-\usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-\usepackage[T1]{fontenc}
 \usepackage{microtype}
 \usepackage{graphicx}
 \usepackage{hhline}
@@ -24,7 +22,6 @@
 \usepackage[format=hang]{caption}
 \usepackage{multirow, bigdelim}
 \usepackage{xcolor}
-\usepackage[linkbordercolor={0.818 0.394 0.394},urlbordercolor={0.366 0.528 0.745},hidelinks]{hyperref}
 \usepackage{placeins}
 \usepackage{import}
 \usepackage[printonlyused, nohyperlinks]{acronym}
@@ -32,29 +29,30 @@
 \usepackage[super]{nth}
 \usepackage{blindtext}
 \usepackage{float}
+\usepackage{orcidlink}
 
 \renewcommand*{\Affilfont}{\footnotesize}
 
 \title{Systematic Misestimation of Machine Learning Performance in Neuroimaging Studies of Depression}
 
-\author[$\;\;$1,2]{\href{https://orcid.org/0000-0001-5164-8227}{Claas Flint \thanks{indicates that the authors contributed equally to the work and should be regarded as first authors.}}}
-\author[$*$ 3,5]{\href{https://orcid.org/0000-0002-3353-8566}{Micah Cearns}}
-\author[1]{\href{https://orcid.org/0000-0003-4749-3298}{Nils Opel}}
-\author[1]{\href{https://orcid.org/0000-0002-7018-4525}{Ronny Redlich}}
-\author[1]{\href{https://orcid.org/0000-0001-6587-2617}{David M. A. Mehler}}
-\author[1]{\href{https://orcid.org/0000-0001-7459-6634}{Daniel Emden}}
-\author[1]{\href{https://orcid.org/0000-0002-6241-1492}{Nils R. Winter}}
+\author[$\;\;$1,2]{Claas Flint\,\orcidlink{0000-0001-5164-8227} \thanks{indicates that the authors contributed equally to the work and should be regarded as first authors.}}
+\author[$*$ 3,5]{Micah Cearns\,\orcidlink{0000-0002-3353-8566}}
+\author[1]{Nils Opel\,\orcidlink{0000-0003-4749-3298}}
+\author[1]{Ronny Redlich\,\orcidlink{0000-0002-7018-4525}}
+\author[1]{David M. A. Mehler\,\orcidlink{0000-0001-6587-2617}}
+\author[1]{Daniel Emden\,\orcidlink{0000-0001-7459-6634}}
+\author[1]{Nils R. Winter\,\orcidlink{0000-0002-6241-1492}}
 \author[1]{Ramona Leenings}
-\author[4,8]{\href{https://orcid.org/0000-0001-6363-2759}{Simon B. Eickhoff}}
-\author[6]{\href{https://orcid.org/0000-0002-2514-2625}{Tilo Kircher}}
-\author[6]{\href{https://orcid.org/0000-0002-0564-2497}{Axel Krug}}
-\author[6]{\href{https://orcid.org/0000-0002-0749-7473}{Igor Nenadic}}
-\author[1]{\href{https://orcid.org/0000-0002-2445-9778}{Volker Arolt}}
+\author[4,8]{Simon B. Eickhoff\,\orcidlink{0000-0001-6363-2759}}
+\author[6]{Tilo Kircher\,\orcidlink{0000-0002-2514-2625}}
+\author[6]{Axel Krug\,\orcidlink{0000-0002-0564-2497}}
+\author[6]{Igor Nenadic\,\orcidlink{0000-0002-0749-7473}}
+\author[1]{Volker Arolt\,\orcidlink{0000-0002-2445-9778}}
 \author[3]{Scott Clark}
-\author[3,5,7]{\href{https://orcid.org/0000-0001-6548-426X}{Bernhard T. Baune}}
-\author[2]{\href{https://orcid.org/0000-0001-7678-9528}{Xiaoyi Jiang}}
-\author[$\;\;\ddagger$1]{\href{https://orcid.org/0000-0002-0623-3759}{Udo Dannlowski \thanks{indicates that the authors contributed equally to the work and should be regarded as senior authors.}}}
-\author[$\;\dagger$1]{\href{https://orcid.org/0000-0002-8929-4134}{Tim Hahn}}
+\author[3,5,7]{Bernhard T. Baune\,\orcidlink{0000-0001-6548-426X}}
+\author[2]{Xiaoyi Jiang\,\orcidlink{0000-0001-7678-9528}}
+\author[$\;\;\ddagger$1]{Udo Dannlowski\,\orcidlink{0000-0002-0623-3759} \thanks{indicates that the authors contributed equally to the work and should be regarded as senior authors.}}
+\author[$\;\dagger$1]{Tim Hahn\,\orcidlink{0000-0002-8929-4134}}
 
 \affil[1]{Department of Psychiatry, University of Münster, Germany}
 \affil[2]{Faculty of Mathematics and Computer Science, University of Münster, Germany}
@@ -91,7 +89,10 @@
     },
     pdfproducer={Claas Flint},
     pdfkeywords={machine learning, neuroimaging, major depression, misestimation, small sample size, clinical translation},
-    colorlinks=false
+    colorlinks=false,
+    linkbordercolor={0.818 0.394 0.394},
+    urlbordercolor={0.366 0.528 0.745},
+    hidelinks
 }
 
 %! language = Latex
@@ -153,7 +154,8 @@
     As we have attempted to hold other components of the modelling process constant so any observed effects of systematic misestimation can be attributed to sample size alone, it is also possible that our results may be dependent on the basic configuration of our \ac{ml} pipeline (e.g., the use of a linear \ac{svm}, default hyperparameters, and \ac{loocv}). Therefore, we trained a further \num{48} pipeline configurations, including the use of both linear and radial basis function \acp{svm} and a Random Forest classifier, all of which have demonstrated their efficacy in neuroimaging classification studies~\cite{Kambeitz2017}. Within these configurations, we conducted dimensionality reduction using \ac{pca} as well as f-test based feature selection. This allowed us to assess whether our findings were being confounded by the large number of predictors used in the main analysis. For further information see Supplement Append~x~\ref{cha:alternative-machine-configurations} and for all results see supplementary results~\ref{cha:alternative-machine-configuration-results}, supplementary figures~\ref{fig:no_PCA_no_selection_RandomForest} -~\ref{fig:PCA_all_components_1000_best_selected_LinearSVC} and supplementary tables~\ref{tab:no_PCA_no_selection_RandomForest}~-~\ref{tab:PCA_all_components_1000_best_selected_LinearSVC}.
 
     \subsubsection{Dummy classifier}
-In order to show that the observed effects were not specific to the \ac{pac} dataset or any of the alternative pipeline configurations in these analyses, we repeated the procedures described above with a dummy classifier. Our dummy classifier assumed a prior probability for \ac{mdd} vs \ac{hc} classification based on the percentage proportion of each class in the training data (prevalence). As the dataset was balanced with random under-sampling, the prior and subsequent ground truth of the model was equal to exactly \SI{50}{\percent}. This approach allowed us to compare our distribution of dummy performance estimates derived from our subsample analysis to this ground truth value. Importantly, this approach allows for the quantification of accuracy misestimation as a function of sample size completely independent of any unique characteristics that may be specific to the \ac{pac} dataset or our pipeline configurations. Therefore, we can then be sure that any subsequent changes in classifier performance are attributable to sample size alone.
+    In order to show that the observed effects were not specific to the \ac{pac} dataset or any of the alternative pipeline configurations in these analyses, we repeated the procedures described above with a dummy classifier. Our dummy classifier assumed a prior probability for \ac{mdd} vs \ac{hc} classification based on the percentage proportion of each class in the training data (prevalence). As the dataset was balanced with random under-sampling, the prior and subsequent ground truth of the model was equal to exactly \SI{50}{\percent}. This approach allowed us to compare our distribution of dummy performance estimates derived from our subsample analysis to this ground truth value. Importantly, this approach allows for the quantification of accuracy misestimation as a function of sample size completely independent of any unique characteristics that may be specific to the \ac{pac} dataset or our pipeline configurations. Therefore, we can then be sure that any subsequent changes in classifier performance are attributable to sample size alone.
+
 
     \section{Results}
 
@@ -249,19 +251,19 @@ In order to show that the observed effects were not specific to the \ac{pac} dat
 
 
     \section{Discussion}
-Sparked by the observation that machine learning studies drawing on larger neuroimaging samples consistently showed weaker results than studies drawing on smaller ones, we drew samples of various sizes from the \ac{pac} dataset, thereby mimicking the process by which researchers would draw samples from the population of \ac{ml} studies reported in the literature. When applying a linear \ac{svm} with \ac{loocv}, as is the most common approach in the neuroimaging literature~\cite{Arbabshirani2017}, we observed a higher risk of misestimations, which may lead to artificially high performance estimates in smaller samples. Importantly, our analyses revealed that this is primarily due to a small test set, not training set size. Generally, this shows that a small test sample size may explain many of the highly optimistic results published in recent years. When considering the well-established effect of publication bias, even if underestimated results are equally as likely, they will have a significantly lower chance of being published.
+    Sparked by the observation that machine learning studies drawing on larger neuroimaging samples consistently showed weaker results than studies drawing on smaller ones, we drew samples of various sizes from the \ac{pac} dataset, thereby mimicking the process by which researchers would draw samples from the population of \ac{ml} studies reported in the literature. When applying a linear \ac{svm} with \ac{loocv}, as is the most common approach in the neuroimaging literature~\cite{Arbabshirani2017}, we observed a higher risk of misestimations, which may lead to artificially high performance estimates in smaller samples. Importantly, our analyses revealed that this is primarily due to a small test set, not training set size. Generally, this shows that a small test sample size may explain many of the highly optimistic results published in recent years. When considering the well-established effect of publication bias, even if underestimated results are equally as likely, they will have a significantly lower chance of being published.
 
     Our results are the first to disentangle the effects of training and test set size effects which are typically inseparable in common cross-validation frameworks such as \ac{loocv}. This delineation of effects enabled two important insights for biomarker discovery and outcome prediction. First, researchers need to validate their models on large, independent test sets. Our results indicate that in the \ac{pac} dataset, a test set size of $N=\num{100}$ was already sufficient to lower the probability of obtaining artificially good performance (i.e., \SI{70}{\percent} or higher) to \SI{13}{\percent}. With a median $N$ of less than \num{100} in many published studies~\cite{Arbabshirani2017}, this may seem challenging. However, online infrastructure for independent machine learning model evaluation is available (e.g., \url{www.photon-ai.com/repo}). If researchers open-source their models, anyone - independent of technical knowledge or machine learning expertise - can evaluate them. This way, large independent test datasets can be obtained in a short time without the need for data sharing. This is not restricted to neuroimaging data, but any machine learning model. In addition, efforts from consortia will also help to mitigate this problem and should be considered by machine learning practitioners.
 
-Second, the size of the training set alone cannot serve as an indicator of later model performance. Larger training sets are more likely to generalize to new data and broaden model scope (i.e., about which groups within a population a given model can make reasonable predictions), however, in the current analysis, the linear rule learned by an \ac{svm} on high-dimensional neuroimaging data could be approximated with only a handful of samples. From a training set size of \num{30} onward, we no longer observed any increase in model performance. This somewhat counterintuitive effect arises whenever a simple rule is approximated. For higher complexity models (i.e., models capable of learning more complex rules), we, of course, expect performance increases as training sample size increases. However, considering the results of the \ac{pac} (Supplementary appendix~\ref{cha:pac-2018}), high complexity models such as Deep Learning approaches did not yield higher performance when trained with $\sim\num{1000}$ samples. Thus, we conclude that simple models are competitive for sample sizes of up to $N=\num{1000}$ for this particular classification problem. Whether more complex rules can be discovered beyond this point or whether other fundamental issues hamper biomarker discovery in psychiatry (cf. e.g.\ biotype identification~\cite{Kircher2018} and normative modelling approaches~\cite{Marquand2016}) remains an open question.
+    Second, the size of the training set alone cannot serve as an indicator of later model performance. Larger training sets are more likely to generalize to new data and broaden model scope (i.e., about which groups within a population a given model can make reasonable predictions), however, in the current analysis, the linear rule learned by an \ac{svm} on high-dimensional neuroimaging data could be approximated with only a handful of samples. From a training set size of \num{30} onward, we no longer observed any increase in model performance. This somewhat counterintuitive effect arises whenever a simple rule is approximated. For higher complexity models (i.e., models capable of learning more complex rules), we, of course, expect performance increases as training sample size increases. However, considering the results of the \ac{pac} (Supplementary appendix~\ref{cha:pac-2018}), high complexity models such as Deep Learning approaches did not yield higher performance when trained with $\sim\num{1000}$ samples. Thus, we conclude that simple models are competitive for sample sizes of up to $N=\num{1000}$ for this particular classification problem. Whether more complex rules can be discovered beyond this point or whether other fundamental issues hamper biomarker discovery in psychiatry (cf. e.g.\ biotype identification~\cite{Kircher2018} and normative modelling approaches~\cite{Marquand2016}) remains an open question.
 
-An intuitive criticism of our main analyses would be that it has merely replicated methods similar to those of previous low-quality works (for example, studies using only linear \acp{svm} with default parameters, tested in \ac{loocv} schemes, on samples with many more predictors than observations). Whilst this pipeline configuration was used in the current analysis to a) hold constant properties, that if varied, may have been indistinguishably responsible for changes in accuracy misestimation, and b) replicate the most commonly used \ac{ml} pipeline configuration in our field, it was important to conduct complementary analyses to rule out these confounds. Therefore, we tested a further \num{48} \ac{ml} pipeline configurations (see Supplementary appendix~\ref{cha:alternative-machine-configurations}) using both linear (a linear \ac{svm}) and non-linear (a \ac{rbf} \ac{svm} and a Random Forest) classifiers. In addition, we conducted \ac{pca} based dimensionality reduction as well as f-test based feature selection within these classifiers to delineate whether our findings were confounded by the large size of the predictor space relative to our number of observations. Importantly, all pipeline configurations demonstrated the same pattern of systematic misestimation as that in our main analyses. The second potential criticism of the current work is that these findings may merely be modality-specific, limiting the generalizability of these findings across domains. However, the use of a dummy classifier that completely ignored the input predictor space (the voxels), and instead, classified samples based only on their prevalence in training ($\text{\ac{mdd}}=\SI{50}{\percent}$, $\text{\ac{hc}}=\SI{50}{\percent}$), showed the same pattern of sample size based systematic misestimation across all pipeline configurations, thus, demonstrating a generalizable statistical effect regardless of the data modality used.
+    An intuitive criticism of our main analyses would be that it has merely replicated methods similar to those of previous low-quality works (for example, studies using only linear \acp{svm} with default parameters, tested in \ac{loocv} schemes, on samples with many more predictors than observations). Whilst this pipeline configuration was used in the current analysis to a) hold constant properties, that if varied, may have been indistinguishably responsible for changes in accuracy misestimation, and b) replicate the most commonly used \ac{ml} pipeline configuration in our field, it was important to conduct complementary analyses to rule out these confounds. Therefore, we tested a further \num{48} \ac{ml} pipeline configurations (see Supplementary appendix~\ref{cha:alternative-machine-configurations}) using both linear (a linear \ac{svm}) and non-linear (a \ac{rbf} \ac{svm} and a Random Forest) classifiers. In addition, we conducted \ac{pca} based dimensionality reduction as well as f-test based feature selection within these classifiers to delineate whether our findings were confounded by the large size of the predictor space relative to our number of observations. Importantly, all pipeline configurations demonstrated the same pattern of systematic misestimation as that in our main analyses. The second potential criticism of the current work is that these findings may merely be modality-specific, limiting the generalizability of these findings across domains. However, the use of a dummy classifier that completely ignored the input predictor space (the voxels), and instead, classified samples based only on their prevalence in training ($\text{\ac{mdd}}=\SI{50}{\percent}$, $\text{\ac{hc}}=\SI{50}{\percent}$), showed the same pattern of sample size based systematic misestimation across all pipeline configurations, thus, demonstrating a generalizable statistical effect regardless of the data modality used.
 
     Given the profound effect of the test set size on systematic misestimation, it is important to consider why an effect of overestimation may arise. Previous work by Schnack \& Kahn~\cite{Schnack2016} suggests that patient characteristics in smaller samples tend to be more homogeneous. In the case of small $N$, participants may be more likely to be recruited from the same data collection site and of a similar age (for example, in the case of a university recruited convenience sample). In addition, stringent recruitment criterion may be easily met, resulting in a well-defined phenotype that is not truly representative of the parent population of interest. Whilst this explanation makes sense for samples collected in this manner, it fails to explain why we observed this phenomenon in our random sampling procedure, and more importantly, with our dummy classifiers that paid no attention to participants, their characteristics, or the inputted predictor variables. This observation suggests a mechanism for systematic misestimation that is not just sample/patient-specific or contingent on sample homogeneity, but instead, inherent in the natural variation that arises in small test samples. Indeed, this effect is known as sampling error, and as demonstrated by Combrisson et al.~\cite{Combrisson2015} can lead to an effect whereby we exceed a machine learning model's chance level, purely by chance.
 
     In addition to sample size, other issues such as data leakage~\cite{Kambeitz2017}, are likely contributing to the systematic overestimation seen in the literature. Dedicated cross-platform software to help avoid data leakage is freely available (e.g.\ PHOTON, \url{www.photon-ai.com} or Scikit-learn~\cite{scikit-learn}). Finally, code should be made available on request or provided in an online repository (e.g., GitHub or GitLab) upon submission for review. In addition, a more elaborate evaluation framework including the analysis of model scope assessment as well as incremental utility and risk analysis is needed to move the field beyond proof-of-concept studies. The success of current translational efforts in neuroimaging and psychiatry will crucially depend on the timely adoption of guidelines and rules for medical machine learning models (for an in-depth introduction, see~\cite{Hahn2019}).
 
-In summary, our results indicate that - while many of the most highly published results might strongly overestimate true performance - evaluation on large test sets constitutes a straightforward remedy. Given that simple, low-complexity models such as linear \acp{svm} did not gain from larger training set size, researchers should not discard their models due to low training $N$ but seek evaluation on a large test set for any model showing good performance.
+    In summary, our results indicate that - while many of the most highly published results might strongly overestimate true performance - evaluation on large test sets constitutes a straightforward remedy. Given that simple, low-complexity models such as linear \acp{svm} did not gain from larger training set size, researchers should not discard their models due to low training $N$ but seek evaluation on a large test set for any model showing good performance.
 
     \section*{Acknowledgements}
     \subsection*{FOR2107}
@@ -323,7 +325,8 @@ In summary, our results indicate that - while many of the most highly published 
     \input{supplements_texversion.tex}
 
     \FloatBarrier
-    
+
+
     \section{Abbreviations}
     \input{abbreviations.tex}
 
