@@ -38,18 +38,18 @@ Abstract
 --------
 We currently observe a disconcerting phenomenon in machine learning studies in psychiatry: While we would expect larger
 samples to yield better results due to the availability of more data, larger machine learning studies consistently show
-much weaker performance than the numerous small- scale studies. Here, we systematically investigated this effect
-focusing on one of the most heavily studied questions in the field, namely the classification of patients suffering from
-major depressive disorder (MDD) and healthy control (HC) based on neuroimaging data. Drawing upon structural magnetic
-resonance imaging (MRI) data from a balanced sample of N = 1,868 MDD patients and HC from our recent international
-Predictive Analytics Competition (PAC), we first trained and tested a classification model on the full dataset which
-yielded an accuracy of 61 %. Next, we mimicked the process by which researchers would draw samples of various sizes (N =
-4 to N = 150) from the population and showed a strong risk of misestimation. Specifically, for small sample sizes (N =
-20), we observe accuracies of up to 95 %. For medium sample sizes (N = 100) accuracies up to 75 % were found.
-Importantly, further investigation showed that sufficiently large test sets effectively protect against performance
-misestimation whereas larger datasets per se do not. While these results question the validity of a substantial part of
-the current literature, we outline the relatively low-cost remedy of larger test sets, which is readily available in
-most cases.
+much weaker performance than the numerous small-scale studies. Here, we systematically investigated this effect focusing
+on one of the most heavily studied questions in the field, namely the classification of patients suffering from major
+depressive disorder (MDD) and healthy control (HC) based on neuroimaging data. Drawing upon structural magnetic
+resonance imaging (MRI) data from a balanced sample of N&#8239;=&#8239;1,868 MDD patients and HC from our recent
+international Predictive Analytics Competition (PAC), we first trained and tested a classification model on the full
+dataset which yielded an accuracy of 61&#8239;%. Next, we mimicked the process by which researchers would draw samples
+of various sizes (N&#8239;=&#8239;4 to N&#8239;=&#8239;150) from the population and showed a strong risk of
+misestimation. Specifically, for small sample sizes (N&#8239;=&#8239;20), we observe accuracies of up to 95&#8239;%. For
+medium sample sizes (N&#8239;=&#8239;100) accuracies up to 75&#8239;% were found. Importantly, further investigation
+showed that sufficiently large test sets effectively protect against performance misestimation whereas larger datasets
+per se do not. While these results question the validity of a substantial part of the current literature, we outline the
+relatively low-cost remedy of larger test sets, which is readily available in most cases.
 
 **Keywords**: machine learning - neuroimaging - major depressive disorder - misestimation - overestimation - small
 sample size - clinical translation
