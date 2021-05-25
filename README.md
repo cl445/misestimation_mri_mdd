@@ -31,8 +31,8 @@ Hahn [![ORCID](ORCIDiD_icon16x16.png)](https://orcid.org/0000-0002-8929-4134) <s
 <sup>8</sup>Institute of Systems Neuroscience, Medical Faculty, Heinrich Heine University Düsseldorf, Düsseldorf,
 Germany
 
-<sup>&ast;</sup> indicates that the authors contributed equally to the work and should be regarded as first authors.
-<sup>&dagger;</sup> indicates that the authors contributed equally to the work and should be regarded as senior authors.
+<sup>&ast;</sup>&nbsp;indicates that the authors contributed equally to the work and should be regarded as first authors.
+<sup>&dagger;</sup>&nbsp;indicates that the authors contributed equally to the work and should be regarded as senior authors.
 
 Abstract
 --------
