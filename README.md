@@ -72,7 +72,10 @@ entry ([download](https://gitcdn.link/repo/cl445/misestimation_of_ml_performance
     author = {Flint, Claas and Cearns, Micah and Opel, Nils and Redlich, Ronny and Mehler, David M A and Emden, Daniel and Winter, Nils R and Leenings, Ramona and Eickhoff, Simon B and Kircher, Tilo and Krug, Axel and Nenadic, Igor and Arolt, Volker and Clark, Scott and Baune, Bernhard T and Jiang, Xiaoyi and Dannlowski, Udo and Hahn, Tim},
     year = {2021},
     journal = {Neuropsychopharmacology},
-    month = {may},
+    volume = {46},
+    month = {jul},
+    number = {8},
+    pages = {1510--1517},
     doi = {10.1038/s41386-021-01020-7},
     issn = {0893-133X},
     url = {https://doi.org/10.1038/s41386-021-01020-7 http://www.nature.com/articles/s41386-021-01020-7}
